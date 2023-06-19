@@ -1,9 +1,9 @@
 // import Menu from "@/ui/menu"
-import Footer from "@/ui/footer"
+import Footer from "@/components/footer"
 import localFont from "next/font/local"
 
-import "./globals.css"
 import "../../node_modules/github-markdown-css/github-markdown-light.css"
+import "./globals.css"
 
 const sourceSans = localFont({
   preload: true,

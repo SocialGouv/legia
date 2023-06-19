@@ -26,6 +26,7 @@ const Message = ({
       <div className="markdown-body">
         <ReactMarkdown
           // remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
+          children={content || ""}
           components={{
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || "")
@@ -45,9 +46,7 @@ const Message = ({
               )
             },
           }}
-        >
-          {content}
-        </ReactMarkdown>
+        />
       </div>
       <div className="info">
         {tokens && <div>tokens: {tokens}</div>}

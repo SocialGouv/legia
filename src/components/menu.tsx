@@ -1,13 +1,15 @@
 const History = () => {
   const storedMessages = localStorage.getItem("messages")
 
-    const messages = storedMessages ? JSON.parse(storedMessages) : []
+  const messages = storedMessages ? JSON.parse(storedMessages) : []
 
-  return (<ul>
-    {messages.map((message) => (
-      <li>{message}</li>
-    ))}
-  </ul>)
+  return (
+    <ul>
+      {messages.map((message: string, i: number) => (
+        <li key={i}>{message}</li>
+      ))}
+    </ul>
+  )
 }
 
 const Menu = () => {

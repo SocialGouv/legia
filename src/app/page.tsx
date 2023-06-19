@@ -1,5 +1,5 @@
-import Form from "@/ui/form"
-import Messages from "@/ui/messages"
+import Form from "@/components/form"
+import Messages from "@/components/messages"
 import { ChatProvider } from "./use-chat"
 
 const Page = () => (
