@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": false,
+  "eslint.packageManager": "yarn",
+  "stylelint.validate": ["css", "scss"],
+  "eslint.validate": ["javascript", "typescript", "typescriptreact"],
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "editor.snippetSuggestions": "top",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+}
