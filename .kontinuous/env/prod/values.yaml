@@ -1,0 +1,16 @@
+app:
+  host: www.fabrique.social.gouv.fr
+  certSecretName: www-crt
+  redirectFrom:
+    - www.incubateur.social.gouv.fr
+    - incubateur.social.gouv.fr
+    - fabrique.social.gouv.fr
+  autoscale:
+    enabled: true
+  resources:
+    requests:
+      cpu: 10m
+      memory: 32M
+    limits:
+      cpu: 40m
+      memory: 128M

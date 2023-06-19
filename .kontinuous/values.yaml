@@ -1,0 +1,17 @@
+app:
+  ~needs: [build-app]
+  envFrom:
+    - secretRef:
+        name: app
+  env:
+    - name: NEXTAUTH_URL
+      value: https://{{ .Values.global.host }}
+  probesPath: /healthz
+  imagePackage: app
+
+jobs:
+  runs:
+    build-app:
+      use: build
+      with:
+        imagePackage: app
