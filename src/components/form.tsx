@@ -91,19 +91,23 @@ const Form = () => {
           onChange={({ target: { value } }) => setPrompt(value)}
         />
         <button type="submit">Submit</button>
-        {messages.length && (
-          <button className="secondary" onClick={() => clear()}>
+        {messages.length > 0 && (
+          <button
+            type="button"
+            onClick={() => clear()}
+            title="reset conversation"
+            className="secondary w-12"
+          >
             <svg
-              className="h-8 w-8 text-white"
-              viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
               strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="h-6 w-6 text-white"
             >
-              {" "}
-              <line x1="18" y1="6" x2="6" y2="18" />{" "}
+              <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </button>
