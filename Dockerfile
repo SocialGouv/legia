@@ -13,7 +13,10 @@ ENV NEXT_TELEMETRY_DISABLED 1
 # install deps
 COPY yarn.lock .yarnrc.yml ./
 COPY .yarn ./.yarn
-RUN yarn fetch
+
+## TO FIX
+## RUN yarn fetch
+RUN yarn install
 
 # build
 COPY . .
