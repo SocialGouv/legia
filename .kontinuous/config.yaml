@@ -1,8 +1,2 @@
 projectName: fabrique
 ciNamespace: ci-fabrique
-
-dependencies:
-  fabrique:
-    import: socialgouv/kontinuous/plugins/fabrique
-    options:
-      registry: ghcr.io
