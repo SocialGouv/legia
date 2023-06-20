@@ -30,6 +30,20 @@ const sourceSans = localFont({
   ],
 })
 
+const dancingScript = localFont({
+  preload: true,
+  display: "swap",
+  fallback: ["serif"],
+  variable: "--font-dancing-script",
+  src: [
+    {
+      weight: "400",
+      style: "normal",
+      path: "../fonts/DancingScript-Regular.ttf",
+    },
+  ],
+})
+
 const sourceCode = localFont({
   weight: "400",
   preload: true,
@@ -40,17 +54,21 @@ const sourceCode = localFont({
   src: "../fonts/SourceCodePro-Regular.ttf",
 })
 
-const Layout = ({ children }: { children: React.ReactNode }) => (
-  <html lang="en" className={`${sourceSans.variable} ${sourceCode.variable}`}>
-    <head />
-    <body>
-      <ThreadsProvider>
-        <Menu />
-        {children}
-        {/* <Footer /> */}
-      </ThreadsProvider>
-    </body>
-  </html>
-)
-
+const Layout = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <html
+      lang="en"
+      className={`${sourceSans.variable} ${sourceCode.variable} ${dancingScript.variable}`}
+    >
+      <head />
+      <body>
+        <ThreadsProvider>
+          <Menu />
+          {children}
+          {/* <Footer /> */}
+        </ThreadsProvider>
+      </body>
+    </html>
+  )
+}
 export default Layout
