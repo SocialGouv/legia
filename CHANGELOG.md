@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/SocialGouv/legia/compare/v1.0.3...v1.0.4) (2023-06-20)
+
+
+### Bug Fixes
+
+* remove resources ([f24867e](https://github.com/SocialGouv/legia/commit/f24867e33437a6100b5a1cfbb15f908e7fd4a47d))
+
 ## [1.0.3](https://github.com/SocialGouv/legia/compare/v1.0.2...v1.0.3) (2023-06-20)
 
 
