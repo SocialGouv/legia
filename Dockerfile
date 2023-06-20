@@ -14,6 +14,9 @@ ENV NEXT_TELEMETRY_DISABLED 1
 COPY yarn.lock .yarnrc.yml ./
 COPY .yarn ./.yarn
 
+# temp TO DELETE
+COPY package.json ./
+
 ## TO FIX
 ## RUN yarn fetch
 RUN yarn install
