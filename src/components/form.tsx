@@ -72,9 +72,9 @@ const Form = () => {
     }
   }
 
-  const clear = () => {
-    localStorage.removeItem("messages")
-  }
+  // const clear = () => {
+  //   localStorage.removeItem("messages")
+  // }
 
   return (
     <div className="form-container">
@@ -91,7 +91,7 @@ const Form = () => {
           onChange={({ target: { value } }) => setPrompt(value)}
         />
         <button type="submit">Submit</button>
-        {messages.length > 0 && (
+        {/* {messages.length > 0 && (
           <button
             type="button"
             onClick={() => clear()}
@@ -111,7 +111,7 @@ const Form = () => {
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </button>
-        )}
+        )} */}
       </form>
     </div>
   )

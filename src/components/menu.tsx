@@ -3,20 +3,25 @@
 import Link from "next/link"
 import { v4 as uuidv4 } from "uuid"
 import { useEffect, useState } from "react"
-import { useRouter } from "next/navigation"
+import { useRouter, usePathname, useSearchParams } from "next/navigation"
+
+import { useThreads } from "@/hooks/use-threads"
 
 const History = () => {
-  const [threads, setThreads] = useState([])
+  const pathname = usePathname()
+  const id = pathname.split("/")[2]
+  const { threads, addThread, setStatus } = useThreads()
+  // const [threads, setThreads] = useState([])
 
-  useEffect(() => {
-    const storedthreads = JSON.parse(localStorage.getItem("threads") || "[]")
-    setThreads(storedthreads)
-  }, [])
+  // useEffect(() => {
+  //   const storedthreads = JSON.parse(localStorage.getItem("threads") || "[]")
+  //   setThreads(storedthreads)
+  // }, [])
 
   return (
     <ul className="threads">
-      {threads.map((thread: Record<string, string>, i: number) => (
-        <li key={i}>
+      {threads.map((thread, i: number) => (
+        <li key={i} className={id === thread.id ? "selected" : ""}>
           <svg
             fill="none"
             strokeWidth="2"
@@ -24,7 +29,7 @@ const History = () => {
             stroke="currentColor"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="h-5 w-5 text-slate-800"
+            className="h-5 w-5 text-white"
           >
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
@@ -37,12 +42,15 @@ const History = () => {
 
 const Controls = () => {
   const router = useRouter()
+  const { threads, addThread, setStatus } = useThreads()
 
   function createThread() {
     const id = uuidv4()
-    const threads = JSON.parse(localStorage.getItem("threads") || "[]")
-    threads.push({ id, title: `Conversation #${threads.length + 1}` })
-    localStorage.setItem("threads", JSON.stringify(threads))
+    const thread = { id, title: `Conversation #${threads.length + 1}` }
+    addThread(thread)
+    // const threads = JSON.parse(localStorage.getItem("threads") || "[]")
+    // threads.push({ id, title: `Conversation #${threads.length + 1}` })
+    // localStorage.setItem("threads", JSON.stringify(threads))
     router.push(`/threads/${id}`)
   }
 

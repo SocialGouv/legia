@@ -223,6 +223,9 @@
   .menu {
     @apply bg-white p-3 flex flex-col gap-6;
   }
+  /* .menu {
+    @apply p-3 flex flex-col gap-6 bg-black bg-opacity-10;
+  } */
 
   .controls {
     @apply flex gap-3;
@@ -236,8 +239,13 @@
     @apply flex items-center gap-2;
   }
 
-  .threads li a {
+  .threads li a, .threads li svg {
     @apply text-slate-800;
+    /* @apply text-white; */
+  }
+
+  .threads li.selected a, .threads li.selected svg {
+    @apply text-pink-500;
   }
 
   footer {
