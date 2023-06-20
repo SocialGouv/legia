@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/SocialGouv/legia/compare/v1.0.4...v1.1.0) (2023-06-20)
+
+
+### Features
+
+* add menu drawer ([6786aab](https://github.com/SocialGouv/legia/commit/6786aabc678a5bd27b70e12104edf2be20cba9fa))
+
 ## [1.0.4](https://github.com/SocialGouv/legia/compare/v1.0.3...v1.0.4) (2023-06-20)
 
 
