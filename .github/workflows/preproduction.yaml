@@ -11,8 +11,7 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.event.ref }}
 
 jobs:
-  kontinuous:
-    name: "Deploy on Kubernetes 🐳"
-    needs: [build]
+  socialgouv:
+    name: "🇫🇷 SocialGouv"
     uses: socialgouv/workflows/.github/workflows/use-ks-gh-preproduction.yaml@v1
     secrets: inherit
