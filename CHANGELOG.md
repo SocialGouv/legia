@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/SocialGouv/legia/compare/v1.0.0...v1.0.1) (2023-06-20)
+
+
+### Bug Fixes
+
+* ln secrets preprod ([1c1c007](https://github.com/SocialGouv/legia/commit/1c1c0077332bc58d03c9b195af74f0a123eb74ba))
+
 # 1.0.0 (2023-06-20)
 
 
