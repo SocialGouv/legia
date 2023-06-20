@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/SocialGouv/legia/compare/v1.0.1...v1.0.2) (2023-06-20)
+
+
+### Bug Fixes
+
+* bump version ([fe608ec](https://github.com/SocialGouv/legia/commit/fe608ecd4c3fb10c7cac1f572e6866db462b4816))
+
 ## [1.0.1](https://github.com/SocialGouv/legia/compare/v1.0.0...v1.0.1) (2023-06-20)
 
 
