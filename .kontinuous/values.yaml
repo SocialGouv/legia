@@ -1,0 +1,6 @@
+app:
+  probesPath: /api/healthz
+  containerPort: 3000
+  envFrom:
+    - secretRef:
+        name: legia-sealed-secret

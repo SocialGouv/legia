@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "echo 'no tests'"
   },
   "dependencies": {
     "@types/node": "20.3.1",
@@ -36,5 +37,6 @@
   "devDependencies": {
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.8.8"
-  }
+  },
+  "packageManager": "yarn@3.6.0"
 }
