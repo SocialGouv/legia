@@ -1,6 +1,6 @@
 import Form from "@/components/form"
 import Messages from "@/components/messages"
-import { ChatProvider } from "./use-chat"
+import { ChatProvider } from "@/hooks/use-chat"
 
 const Page = () => (
   <main>

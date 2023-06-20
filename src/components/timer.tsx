@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-import { useChat } from "@/app/use-chat"
+import { useChat } from "@/hooks/use-chat"
 
 const COUNT_INTERVAL = 100
 

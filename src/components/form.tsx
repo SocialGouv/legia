@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import type { ChatCompletionRequestMessage } from "openai"
 import ReactTextareaAutosize from "react-textarea-autosize"
 
-import { useChat, type Message } from "@/app/use-chat"
+import { useChat, type Message } from "@/hooks/use-chat"
 
 type FormData = { prompt: string }
 

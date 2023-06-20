@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid"
 import React, { useRef, useEffect } from "react"
 
 import Message from "./message"
-import { useChat } from "@/app/use-chat"
+import { useChat } from "@/hooks/use-chat"
 import LoadingMessage from "./loading-message"
 
 const SCROLL_DELAY = 300

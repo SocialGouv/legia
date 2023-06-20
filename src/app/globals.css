@@ -13,7 +13,7 @@
     flex
     flex-1
     gap-y-3
-    flex-col
+    /* flex-col */
     text-base
     bg-no-repeat
     to-pink-200
@@ -25,12 +25,13 @@
     background-position: calc(100vw - 30rem) calc(100vh - 30rem), 0 0;
     background-image: url(/clouds.webp), linear-gradient(to bottom right, var(--tw-gradient-stops));
   }
-  
+
   main {
     @apply
     flex
     flex-1
     flex-col
+    relative
     overflow-auto
     scroll-smooth
     ;
@@ -105,6 +106,7 @@
 @layer components {
   .form-container {
     @apply
+    px-6
     left-0
     right-0
     bottom-0
@@ -126,7 +128,7 @@
     flex
     mt-5
     mb-10
-    gap-6
+    gap-3
     rounded
     mx-auto
     relative
@@ -214,13 +216,33 @@
     @apply ml-3 text-sm font-semibold text-pink-400;
   }
 
+  /* .menu {
+    @apply absolute h-full shadow z-20 bg-white p-3 flex flex-col gap-6;
+  } */
+
   .menu {
-    @apply absolute h-full shadow z-20 bg-white p-3;
+    @apply bg-white p-3 flex flex-col gap-6;
+  }
+
+  .controls {
+    @apply flex gap-3;
+  }
+
+  .threads {
+    @apply flex flex-col gap-3;
+  }
+
+  .threads li {
+    @apply flex items-center gap-2;
+  }
+
+  .threads li a {
+    @apply text-slate-800;
   }
 
   footer {
     @apply
-    px-2
+    px-7
     flex
     mb-2
     mx-auto

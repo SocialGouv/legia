@@ -1,5 +1,5 @@
-// import Menu from "@/ui/menu"
-import Footer from "@/components/footer"
+import Menu from "@/components/menu"
+// import Footer from "@/components/footer"
 import localFont from "next/font/local"
 
 import "../../node_modules/github-markdown-css/github-markdown-light.css"
@@ -43,9 +43,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en" className={`${sourceSans.variable} ${sourceCode.variable}`}>
     <head />
     <body>
-      {/* <Menu /> */}
+      <Menu />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </body>
   </html>
 )
