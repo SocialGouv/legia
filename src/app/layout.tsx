@@ -1,9 +1,10 @@
-// import Menu from "@/ui/menu"
-import Footer from "@/components/footer"
+import Menu from "@/components/menu"
+// import Footer from "@/components/footer"
 import localFont from "next/font/local"
 
 import "../../node_modules/github-markdown-css/github-markdown-light.css"
 import "./globals.css"
+import { ThreadsProvider } from "@/hooks/use-threads"
 
 const sourceSans = localFont({
   preload: true,
@@ -43,9 +44,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en" className={`${sourceSans.variable} ${sourceCode.variable}`}>
     <head />
     <body>
-      {/* <Menu /> */}
-      {children}
-      <Footer />
+      <ThreadsProvider>
+        <Menu />
+        {children}
+        {/* <Footer /> */}
+      </ThreadsProvider>
     </body>
   </html>
 )

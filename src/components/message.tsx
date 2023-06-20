@@ -8,7 +8,7 @@ import SyntaxHighlighter, {
 } from "react-syntax-highlighter"
 import { tomorrowNight } from "react-syntax-highlighter/dist/cjs/styles/hljs"
 
-import type { Message } from "@/app/use-chat"
+import type { Message } from "@/hooks/use-chat"
 
 const Message = ({
   message: {

@@ -34,10 +34,14 @@ const ChatContext = createContext<ChatContextValue>({
 })
 
 interface ChatProviderProps {
+  threadId: string
   children: React.ReactNode
 }
 
-export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
+export const ChatProvider: React.FC<ChatProviderProps> = ({
+  children,
+  threadId,
+}) => {
   const [messages, setMessages] = useState<Message[]>([])
   const [initialized, setInitialized] = useState<boolean>(false)
   const [status, setStatus] = useState<"ready" | "loading">("ready")
@@ -47,18 +51,18 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
   }, [])
 
   useEffect(() => {
-    const storedMessages = localStorage.getItem("messages")
+    const storedMessages = localStorage.getItem(threadId)
     if (storedMessages) {
       setMessages(JSON.parse(storedMessages))
     }
     setInitialized(true)
-  }, [])
+  }, [threadId])
 
   useEffect(() => {
     if (initialized) {
-      localStorage.setItem("messages", JSON.stringify(messages))
+      localStorage.setItem(threadId, JSON.stringify(messages))
     }
-  }, [messages, initialized])
+  }, [threadId, messages, initialized])
 
   const contextValue = useMemo(
     () => ({

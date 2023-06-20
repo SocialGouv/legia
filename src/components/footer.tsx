@@ -4,14 +4,14 @@ const Footer = () => {
 
   return (
     <footer>
-      <div>Chewam © 2023</div>
+      <div>SocialGouv © 2023</div>
 
       <div>
         version {version} (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href={`https://github.com/chewam/openai/tree/${sha}`}
+          href={`https://github.com/SocialGouv/legia/tree/${sha}`}
         >
           {sha.substring(0, 7)}
         </a>
