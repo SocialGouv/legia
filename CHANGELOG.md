@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/SocialGouv/legia/compare/v1.0.2...v1.0.3) (2023-06-20)
+
+
+### Bug Fixes
+
+* rename dir ([d319add](https://github.com/SocialGouv/legia/commit/d319add6a38076c88967b71c689d0b3b1a0c2175))
+
 ## [1.0.2](https://github.com/SocialGouv/legia/compare/v1.0.1...v1.0.2) (2023-06-20)
 
 
