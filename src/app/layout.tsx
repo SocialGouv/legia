@@ -1,5 +1,4 @@
 import Menu from "@/components/menu"
-// import Footer from "@/components/footer"
 import localFont from "next/font/local"
 
 import "../../node_modules/github-markdown-css/github-markdown-light.css"
@@ -65,7 +64,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <ThreadsProvider>
           <Menu />
           {children}
-          {/* <Footer /> */}
         </ThreadsProvider>
       </body>
     </html>
