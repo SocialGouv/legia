@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/SocialGouv/legia/compare/v1.1.2...v1.1.3) (2023-06-21)
+
+
+### Bug Fixes
+
+* drawer button hover ([c09bc4b](https://github.com/SocialGouv/legia/commit/c09bc4b60ee18cab995c93f732a46b9b14ae81e1))
+
 ## [1.1.2](https://github.com/SocialGouv/legia/compare/v1.1.1...v1.1.2) (2023-06-21)
 
 
