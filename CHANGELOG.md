@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/SocialGouv/legia/compare/v1.1.0...v1.1.1) (2023-06-21)
+
+
+### Bug Fixes
+
+* insurance illustration ([f709532](https://github.com/SocialGouv/legia/commit/f70953282694bdba67ffe0038c46bd3310a8655b))
+
 # [1.1.0](https://github.com/SocialGouv/legia/compare/v1.0.4...v1.1.0) (2023-06-20)
 
 
