@@ -239,7 +239,11 @@
   }
 
   .menu-toggle svg {
-    @apply text-white;
+    @apply text-sky-500;
+  }
+
+  .menu-toggle:hover svg {
+    @apply text-sky-600;
   }
 
   .menu {
