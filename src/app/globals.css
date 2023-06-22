@@ -6,6 +6,48 @@
   html {
     @apply flex flex-col h-full overflow-hidden;
   }
+  body {
+    @apply flex-1 flex overflow-hidden bg-pink-100;
+  }
+  aside {
+    @apply w-64 bg-sky-100 transition-all;
+  }
+  aside.collapsed {
+    @apply relative w-0;
+  }
+  main {
+    @apply relative flex-1 flex flex-col bg-teal-100;
+  }
+  .page {
+    @apply flex-1 flex flex-col bg-fuchsia-100;
+  }
+}
+
+@layer components {
+  .drawer-icon {
+    @apply h-6 w-6 text-white;
+  }
+  .calculator-icon {
+    @apply h-6 w-6;
+  }
+  .calendar-arrow-icon {
+    @apply h-6 w-6;
+  }
+  .clock-arrow-icon {
+    @apply h-6 w-6;
+  }
+  .file-magnifier-icon {
+    @apply h-6 w-6;
+  }
+  .book-icon {
+    @apply h-6 w-6;
+  }
+}
+
+/* @layer base {
+  html {
+    @apply flex flex-col h-full overflow-hidden;
+  }
 
   body {
     @apply
@@ -38,10 +80,7 @@
     scroll-smooth
     ;
   }
-  
-  /* h1 {
-    @apply container mx-auto px-12 text-xl text-sky-600;
-  } */
+
   h2 {
     @apply text-3xl;
   }
@@ -61,7 +100,6 @@
     font-semibold
     justify-center
     transition-all
-    /* text-stone-100 */
     focus:shadow-lg
     active:enabled:shadow
     hover:enabled:shadow-lg
@@ -223,14 +261,6 @@
     @apply ml-3 text-sm font-semibold text-pink-400;
   }
 
-  /* .menu {
-    @apply absolute h-full shadow z-20 bg-white p-3 flex flex-col gap-6;
-  } */
-
-  /* .menu {
-    @apply p-3 flex flex-col gap-6;
-  } */
-
   .menu-toggle {
     @apply absolute z-20 top-6 left-6 w-auto
     focus:shadow-none
@@ -258,10 +288,8 @@
     left-0
     h-full
     flex-col
-    /* bg-black */
     bg-white
     transform
-    /* bg-opacity-50 */
     translate-x-0
     transition-transform;
   }
@@ -288,7 +316,6 @@
 
   .threads li a, .threads li svg {
     @apply text-slate-800;
-    /* @apply text-white; */
   }
 
   .threads li.selected a, .threads li.selected svg {
@@ -305,14 +332,7 @@
     font-family: var(--font-dancing-script);
   }
 
-  /* .themes {
-    @apply flex flex-1 px-12;
-  } */
-
-  .themes {
-    /* @apply flex flex-wrap flex-1 items-start content-center justify-center mx-12; */
-    /* @apply flex flex-wrap flex-1 bg-blue-100 items-start; */
-  }
+  .themes {}
 
   .themes a[href] {
     @apply no-underline;
@@ -324,7 +344,6 @@
     py-3
     pr-6
     pl-1
-    /* pl-40 */
     rounded
     text-lg
     bg-white
@@ -389,4 +408,4 @@
   .markdown-body pre > div {
     padding: 12px 16px !important;
   }
-}
+} */

@@ -1,9 +1,14 @@
 import Menu from "@/components/menu"
+import { Metadata } from "next"
 import localFont from "next/font/local"
 
 import "../../node_modules/github-markdown-css/github-markdown-light.css"
 import "./globals.css"
 import { ThreadsProvider } from "@/hooks/use-threads"
+import DrawerToggle from "@/components/drawer-toggle"
+import { DrawerProvider } from "@/hooks/use-drawer"
+import Aside from "@/components/aside"
+import Footer from "@/components/footer"
 
 const sourceSans = localFont({
   preload: true,
@@ -53,6 +58,11 @@ const sourceCode = localFont({
   src: "../fonts/SourceCodePro-Regular.ttf",
 })
 
+export const metadata: Metadata = {
+  title: "LegIA - Home",
+  description: "LegIA, l'application juridique basée sur l'IA",
+}
+
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html
@@ -61,12 +71,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     >
       <head />
       <body>
-        <ThreadsProvider>
-          <Menu />
-          {children}
-        </ThreadsProvider>
+        <DrawerProvider>
+          <Aside />
+          <main>
+            <DrawerToggle />
+            {children}
+            <Footer />
+          </main>
+        </DrawerProvider>
       </body>
     </html>
   )
 }
+
 export default Layout
