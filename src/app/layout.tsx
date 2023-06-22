@@ -1,13 +1,12 @@
-import Menu from "@/components/menu"
 import { Metadata } from "next"
 import localFont from "next/font/local"
 
 import "../../node_modules/github-markdown-css/github-markdown-light.css"
 import "./globals.css"
-import { ThreadsProvider } from "@/hooks/use-threads"
+
 import DrawerToggle from "@/components/drawer-toggle"
 import { DrawerProvider } from "@/hooks/use-drawer"
-import Aside from "@/components/aside"
+import Aside from "@/components/drawer"
 import Footer from "@/components/footer"
 
 const sourceSans = localFont({

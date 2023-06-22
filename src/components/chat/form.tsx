@@ -6,6 +6,7 @@ import type { ChatCompletionRequestMessage } from "openai"
 import ReactTextareaAutosize from "react-textarea-autosize"
 
 import { useChat, type Message } from "@/hooks/use-chat"
+import SendIcon from "../assets/send-icon"
 
 type FormData = { prompt: string }
 
@@ -88,9 +89,13 @@ const Form = () => {
           cacheMeasurements
           {...register("prompt")}
           placeholder="Send a message..."
-          onChange={({ target: { value } }) => setPrompt(value)}
+          onChange={({ target: { value } }: { target: { value: string } }) =>
+            setPrompt(value)
+          }
         />
-        <button type="submit">Submit</button>
+        <button type="submit">
+          <SendIcon />
+        </button>
         {/* {messages.length > 0 && (
           <button
             type="button"

@@ -12,6 +12,7 @@ import {
 export interface Thread {
   id: string
   title: string
+  theme: string
 }
 
 interface ThreadsContextValue {

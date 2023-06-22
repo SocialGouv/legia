@@ -10,7 +10,7 @@
     @apply flex-1 flex overflow-hidden bg-pink-100;
   }
   aside {
-    @apply w-64 bg-sky-100 transition-all;
+    @apply flex flex-col w-64 bg-sky-100 transition-all overflow-hidden;
   }
   aside.collapsed {
     @apply relative w-0;
@@ -19,7 +19,7 @@
     @apply relative flex-1 flex flex-col bg-teal-100;
   }
   .page {
-    @apply flex-1 flex flex-col bg-fuchsia-100;
+    @apply flex-1 flex flex-col overflow-hidden bg-fuchsia-100;
   }
 }
 
@@ -41,6 +41,22 @@
   }
   .book-icon {
     @apply h-6 w-6;
+  }
+  .chat-icon {
+    @apply h-6 w-6;
+  }
+  .send-icon {
+    @apply h-6 w-6;
+  }
+
+  .chat {
+    @apply flex-1 flex flex-col overflow-hidden bg-blue-100;
+  }
+  .messages {
+    @apply flex-1 overflow-auto;
+  }
+  .threads {
+    @apply flex-1 overflow-auto;
   }
 }
 
