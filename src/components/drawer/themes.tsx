@@ -4,6 +4,7 @@ import { v4 as uuid } from "uuid"
 import { createElement } from "react"
 import { useRouter } from "next/navigation"
 import useThemes, { type Theme } from "@/hooks/use-themes"
+import { useThreads } from "@/hooks/use-threads"
 
 const ThemeItem = ({ theme: { icon, title } }: { theme: Theme }) => (
   <div className="theme">
@@ -31,9 +32,14 @@ const ThemeItemBig = ({
 const Themes = ({ size = "medium" }: { size?: "medium" | "big" }) => {
   const router = useRouter()
   const themes = useThemes()
+  const { threads, addThread } = useThreads()
 
-  const handleClick = (theme: Theme) => {
-    router.push(`/chat/${theme.route}/${uuid()}`)
+  const handleClick = ({ route: theme }: Theme) => {
+    const id = uuid()
+    const title = `Conversation #${threads.length + 1}`
+
+    addThread({ id, theme, title })
+    router.push(`/chat/${theme}/${id}`)
   }
 
   return (

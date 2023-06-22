@@ -10,8 +10,8 @@ const Aside = () => {
 
   return (
     <aside className={state}>
-      <Themes />
       <ThreadsProvider>
+        <Themes />
         <Threads />
       </ThreadsProvider>
     </aside>
