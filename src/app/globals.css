@@ -12,9 +12,6 @@
   aside {
     @apply flex flex-col w-64 bg-sky-100 transition-all overflow-hidden;
   }
-  aside.collapsed {
-    @apply relative w-0;
-  }
   main {
     @apply relative flex-1 flex flex-col bg-teal-100;
   }

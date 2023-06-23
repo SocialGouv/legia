@@ -16,7 +16,7 @@ interface DrawerContextValue {
 }
 
 const DrawerContext = createContext<DrawerContextValue>({
-  state: "expanded",
+  state: "collapsed",
   setState: () => {},
   toggleDrawer: () => {},
 })
@@ -27,7 +27,7 @@ interface DrawerProviderProps {
 
 export const DrawerProvider: React.FC<DrawerProviderProps> = ({ children }) => {
   const [initialized, setInitialized] = useState<boolean>(false)
-  const [state, setState] = useState<"expanded" | "collapsed">("expanded")
+  const [state, setState] = useState<"expanded" | "collapsed">("collapsed")
 
   const toggleDrawer = useCallback(() => {
     console.log("toggleDrawer")

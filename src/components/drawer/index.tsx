@@ -9,7 +9,7 @@ const Aside = () => {
   const { state } = useDrawer()
 
   return (
-    <aside className={state}>
+    <aside className={state === "collapsed" ? "w-0" : ""}>
       <ThreadsProvider>
         <Themes />
         <Threads />
