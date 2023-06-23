@@ -9,7 +9,7 @@
   body {
     @apply flex-1 flex overflow-hidden bg-pink-100;
   }
-  aside {
+  nav {
     @apply flex flex-col w-64 bg-sky-100 transition-all overflow-hidden;
   }
   main {
@@ -51,6 +51,9 @@
   }
   .messages {
     @apply flex-1 overflow-auto;
+  }
+  .menu {
+    @apply flex-1 w-64 flex flex-col overflow-hidden;
   }
   .threads {
     @apply flex-1 overflow-auto;

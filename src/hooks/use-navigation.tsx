@@ -9,34 +9,36 @@ import {
   useState,
 } from "react"
 
-interface DrawerContextValue {
-  toggleDrawer: () => void
+interface NavigationContextValue {
+  toggleNavigation: () => void
   state: "expanded" | "collapsed"
   setState: (status: "expanded" | "collapsed") => void
 }
 
-const DrawerContext = createContext<DrawerContextValue>({
+const NavigationContext = createContext<NavigationContextValue>({
   state: "collapsed",
   setState: () => {},
-  toggleDrawer: () => {},
+  toggleNavigation: () => {},
 })
 
-interface DrawerProviderProps {
+interface NavigationProviderProps {
   children: React.ReactNode
 }
 
-export const DrawerProvider: React.FC<DrawerProviderProps> = ({ children }) => {
+export const NavigationProvider: React.FC<NavigationProviderProps> = ({
+  children,
+}) => {
   const [initialized, setInitialized] = useState<boolean>(false)
   const [state, setState] = useState<"expanded" | "collapsed">("collapsed")
 
-  const toggleDrawer = useCallback(() => {
+  const toggleNavigation = useCallback(() => {
     setState((prevState) =>
       prevState === "expanded" ? "collapsed" : "expanded"
     )
   }, [])
 
   useEffect(() => {
-    const storedState = localStorage.getItem("drawer")
+    const storedState = localStorage.getItem("navigation")
     if (storedState === "expanded" || storedState === "collapsed") {
       setState(storedState)
     }
@@ -45,7 +47,7 @@ export const DrawerProvider: React.FC<DrawerProviderProps> = ({ children }) => {
 
   useEffect(() => {
     if (initialized) {
-      localStorage.setItem("drawer", state)
+      localStorage.setItem("navigation", state)
     }
   }, [state, initialized])
 
@@ -53,16 +55,17 @@ export const DrawerProvider: React.FC<DrawerProviderProps> = ({ children }) => {
     () => ({
       state,
       setState,
-      toggleDrawer,
+      toggleNavigation,
     }),
-    [state, setState, toggleDrawer]
+    [state, setState, toggleNavigation]
   )
 
   return (
-    <DrawerContext.Provider value={contextValue}>
+    <NavigationContext.Provider value={contextValue}>
       {children}
-    </DrawerContext.Provider>
+    </NavigationContext.Provider>
   )
 }
 
-export const useDrawer = (): DrawerContextValue => useContext(DrawerContext)
+export const useNavigation = (): NavigationContextValue =>
+  useContext(NavigationContext)

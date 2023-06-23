@@ -1,4 +1,4 @@
-import Themes from "@/components/drawer/themes"
+import Themes from "@/components/navigation/themes"
 
 export default function Page() {
   return (

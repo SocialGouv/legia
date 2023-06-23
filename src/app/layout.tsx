@@ -4,9 +4,9 @@ import localFont from "next/font/local"
 import "../../node_modules/github-markdown-css/github-markdown-light.css"
 import "./globals.css"
 
-import DrawerToggle from "@/components/drawer-toggle"
-import { DrawerProvider } from "@/hooks/use-drawer"
-import Aside from "@/components/drawer"
+import NavigationToggle from "@/components/navigation-toggle"
+import { NavigationProvider } from "@/hooks/use-navigation"
+import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 
 const sourceSans = localFont({
@@ -70,14 +70,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     >
       <head />
       <body>
-        <DrawerProvider>
-          <Aside />
+        <NavigationProvider>
+          <Navigation />
           <main>
-            <DrawerToggle />
+            <NavigationToggle />
             {children}
             <Footer />
           </main>
-        </DrawerProvider>
+        </NavigationProvider>
       </body>
     </html>
   )
