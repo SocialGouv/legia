@@ -8,6 +8,7 @@ import NavigationToggle from "@/components/navigation-toggle"
 import { NavigationProvider } from "@/hooks/use-navigation"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { ThreadsProvider } from "@/hooks/use-threads"
 
 const sourceSans = localFont({
   preload: true,
@@ -71,12 +72,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <head />
       <body>
         <NavigationProvider>
-          <Navigation />
-          <main>
-            <NavigationToggle />
-            {children}
-            <Footer />
-          </main>
+          <ThreadsProvider>
+            <Navigation />
+            <main>
+              <NavigationToggle />
+              {children}
+              <Footer />
+            </main>
+          </ThreadsProvider>
         </NavigationProvider>
       </body>
     </html>
