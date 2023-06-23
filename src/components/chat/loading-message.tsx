@@ -1,6 +1,6 @@
 "use client"
 
-import Timer from "./timer"
+import Timer from "../timer"
 
 const LoadingMessage = () => {
   return (

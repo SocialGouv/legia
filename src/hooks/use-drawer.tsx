@@ -30,14 +30,12 @@ export const DrawerProvider: React.FC<DrawerProviderProps> = ({ children }) => {
   const [state, setState] = useState<"expanded" | "collapsed">("collapsed")
 
   const toggleDrawer = useCallback(() => {
-    console.log("toggleDrawer")
     setState((prevState) =>
       prevState === "expanded" ? "collapsed" : "expanded"
     )
   }, [])
 
   useEffect(() => {
-    console.log("localStorage.getItem")
     const storedState = localStorage.getItem("drawer")
     if (storedState === "expanded" || storedState === "collapsed") {
       setState(storedState)
@@ -47,7 +45,6 @@ export const DrawerProvider: React.FC<DrawerProviderProps> = ({ children }) => {
 
   useEffect(() => {
     if (initialized) {
-      console.log("localStorage.setItem")
       localStorage.setItem("drawer", state)
     }
   }, [state, initialized])
