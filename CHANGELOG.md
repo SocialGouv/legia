@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/SocialGouv/legia/compare/v1.1.3...v1.2.0) (2023-06-24)
+
+
+### Bug Fixes
+
+* drawer ([4f58ae1](https://github.com/SocialGouv/legia/commit/4f58ae118a2b8ede5abda24f8e2fcd475c5e4958))
+
+
+### Features
+
+* reshape app ([0d1edbf](https://github.com/SocialGouv/legia/commit/0d1edbf0fca8317914e1f8c272029e20cc5ac8b0))
+
 ## [1.1.3](https://github.com/SocialGouv/legia/compare/v1.1.2...v1.1.3) (2023-06-21)
 
 
