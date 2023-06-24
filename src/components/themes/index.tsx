@@ -3,8 +3,12 @@
 import { v4 as uuid } from "uuid"
 import { createElement } from "react"
 import { useRouter } from "next/navigation"
+
 import { useThreads } from "@/hooks/use-threads"
+import ArrowIcon from "@/components/assets/arrow-icon"
 import useThemes, { type Theme } from "@/hooks/use-themes"
+
+import "./styles.css"
 
 const ThemeItem = ({ theme: { icon, title } }: { theme: Theme }) => (
   <div className="theme">
@@ -24,7 +28,10 @@ const ThemeItemBig = ({
     <div className="icon">{createElement(icon)}</div>
     <div className="text">
       <h2>{title}</h2>
-      <div>{description}</div>
+      <div className="description">{description}</div>
+      <div className="link">
+        Commencer <ArrowIcon />
+      </div>
     </div>
   </div>
 )
@@ -45,11 +52,9 @@ const Themes = ({ size = "medium" }: { size?: "medium" | "big" }) => {
   return (
     <ul className={`themes ${size}`}>
       {themes.map((theme, i) => (
-        <li key={`theme-${i}`}>
-          <div onClick={() => handleClick(theme)}>
-            {size === "medium" && <ThemeItem theme={theme} />}
-            {size === "big" && <ThemeItemBig theme={theme} />}
-          </div>
+        <li key={`theme-${i}`} onClick={() => handleClick(theme)}>
+          {size === "medium" && <ThemeItem theme={theme} />}
+          {size === "big" && <ThemeItemBig theme={theme} />}
         </li>
       ))}
     </ul>

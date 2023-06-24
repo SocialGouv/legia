@@ -1,0 +1,92 @@
+.themes.big {
+  /* @apply outline outline-2 outline-black; */
+  @apply sm:w-3/4 md:w-1/2;
+  @apply flex flex-wrap;
+}
+
+.themes.big li {
+  /* @apply outline outline-1 outline-red-700; */
+  @apply w-1/2;
+  @apply flex h-80;
+}
+
+.themes.big li .theme {
+  @apply relative;
+  @apply cursor-pointer;
+  @apply bg-white m-3 pt-6 pb-6 px-6 rounded shadow-lg;
+  @apply flex flex-col items-center gap-y-3;
+  @apply transition ease-in-out delay-150 hover:-translate-y-1 duration-300;
+}
+
+.themes.big li .theme .icon {
+  @apply bg-slate-100;
+  @apply rounded-full w-20 h-20;
+  @apply flex justify-center items-center;
+}
+
+.themes.big li .theme .icon svg {
+  @apply h-10 w-10;
+}
+
+.themes.big li .theme .text {
+  @apply relative;
+  /* @apply bg-blue-50; */
+  @apply flex-1 flex flex-col gap-y-3;
+}
+
+.themes.big li .theme .text h2 {
+  /* @apply bg-violet-100; */
+  @apply text-xl font-semibold text-center;
+}
+
+.themes.big li .theme .text .description {
+  /* @apply bg-blue-100; */
+  @apply flex-1;
+  @apply flex items-center;
+  @apply text-center;
+}
+
+.themes.big li .theme .text .link {
+  /* @apply bg-green-100; */
+  @apply text-[#FF7067];
+  @apply absolute bottom-0 w-full;
+  @apply flex gap-x-2 justify-center items-center;
+  @apply opacity-0 transition-opacity;
+  @apply ease-in-out delay-150 duration-300;
+}
+
+.themes.big li .theme:hover .text .link {
+  @apply opacity-100;
+}
+
+.themes.big li .theme .text .link svg {
+  @apply relative top-0.5;
+}
+
+.themes.medium {
+  /* @apply bg-pink-100; */
+  /* @apply m-3; */
+  @apply px-3 py-4;
+  @apply flex flex-col gap-y-3;
+}
+
+.themes.medium li .theme {
+  @apply bg-white;
+  @apply shadow-md rounded;
+  @apply cursor-pointer;
+  @apply p-3;
+  @apply flex gap-x-3;
+  @apply transition ease-in-out delay-150 hover:translate-x-1 duration-300;
+}
+
+.themes.medium li .theme .icon {
+  @apply rounded-full bg-slate-100;
+  @apply flex justify-center items-center;
+  @apply w-12 h-12;
+}
+
+.themes.medium li .theme .text {
+  @apply flex-1;
+  @apply flex items-center;
+  /* @apply bg-blue-50; */
+}

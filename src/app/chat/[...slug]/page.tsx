@@ -14,8 +14,6 @@ export default function Page({
 
   return (
     <div className="page">
-      {/* <div>Theme: {themeSlug}</div>
-      <div>ID: {id}</div> */}
       <div className="header">
         <div>{Icon && <Icon />}</div>
         <div>{theme?.title}</div>

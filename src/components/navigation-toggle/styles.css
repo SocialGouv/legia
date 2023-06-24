@@ -1,0 +1,7 @@
+.navigation-toggle {
+  @apply m-12;
+  @apply cursor-pointer;
+  @apply absolute z-10;
+  @apply text-slate-400 transition-colors;
+  @apply hover:text-slate-300;
+}

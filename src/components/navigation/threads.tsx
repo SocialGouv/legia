@@ -6,10 +6,12 @@ import { usePathname } from "next/navigation"
 import { useThreads } from "@/hooks/use-threads"
 import ChatIcon from "../assets/chat-icon"
 
+import "./styles.css"
+
 const Threads = () => {
   const pathname = usePathname()
   const { threads } = useThreads()
-  const id = pathname.split("/")[2]
+  const id = pathname.split("/")[3]
 
   return (
     <ul className="threads">

@@ -1,0 +1,6 @@
+footer {
+  /* @apply bg-pink-100; */
+  @apply container mx-auto;
+  @apply flex justify-between;
+  @apply py-1 px-12;
+}
