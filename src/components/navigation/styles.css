@@ -1,5 +1,5 @@
 nav {
-  @apply py-3;
+  @apply pt-3 pb-1;
   @apply bg-[#FF7067];
   @apply border-r border-slate-200;
 

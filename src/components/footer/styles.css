@@ -2,8 +2,10 @@ footer {
   /* @apply bg-pink-100; */
   @apply container mx-auto;
   @apply flex justify-between;
-  @apply py-1 px-12;
-  @apply text-sky-900;
+  /* @apply py-1 px-12; */
+  @apply px-2;
+  @apply text-sm;
+  @apply text-red-700;
 
-  text-shadow: 0px 1px 1px white;
+  text-shadow: 0px 1px 1px rgb(252 165 165);
 }

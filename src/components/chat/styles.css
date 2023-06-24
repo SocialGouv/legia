@@ -11,7 +11,7 @@
 }
 
 .chat .messages li:last-child {
-  @apply h-32;
+  @apply h-28;
 }
 
 .chat .messages li.assistant {

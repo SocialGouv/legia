@@ -3,5 +3,5 @@
   @apply cursor-pointer;
   @apply absolute z-10;
   @apply text-slate-300 transition-colors;
-  @apply hover:text-[#FF7067] focus:text-[#FF7067];
+  @apply hover:text-[#FF7067];
 }
