@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/SocialGouv/legia/compare/v1.2.0...v1.2.1) (2023-06-24)
+
+
+### Bug Fixes
+
+* form placeholder ([f8b62ec](https://github.com/SocialGouv/legia/commit/f8b62ec4914bb5fbb970521283e44a2f7411533d))
+
 # [1.2.0](https://github.com/SocialGouv/legia/compare/v1.1.3...v1.2.0) (2023-06-24)
 
 
