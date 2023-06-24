@@ -1,21 +1,17 @@
 .page {
-  /* @apply bg-pink-200; */
   @apply items-stretch justify-start;
 }
 
 .header {
-  /* @apply flex-1; */
-  @apply bg-white;
-  /* @apply flex gap-x-6; */
-  /* @apply container mx-auto; */
   @apply p-12;
   @apply shadow-lg;
+  @apply bg-white;
   @apply border-b border-slate-200;
 }
 
 .header-container {
-  @apply container mx-auto;
   @apply flex gap-x-6;
+  @apply container mx-auto;
 }
 
 .header .icon {

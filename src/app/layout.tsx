@@ -4,11 +4,10 @@ import localFont from "next/font/local"
 import "../../node_modules/github-markdown-css/github-markdown-light.css"
 import "./globals.css"
 
-import NavigationToggle from "@/components/navigation-toggle"
-import { NavigationProvider } from "@/hooks/use-navigation"
 import Navigation from "@/components/navigation"
-// import Footer from "@/components/footer"
 import { ThreadsProvider } from "@/hooks/use-threads"
+import { NavigationProvider } from "@/hooks/use-navigation"
+import NavigationToggle from "@/components/navigation-toggle"
 
 const sourceSans = localFont({
   preload: true,
@@ -77,7 +76,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <main>
               <NavigationToggle />
               {children}
-              {/* <Footer /> */}
             </main>
           </ThreadsProvider>
         </NavigationProvider>

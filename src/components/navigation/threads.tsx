@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 import { useThreads } from "@/hooks/use-threads"
-import ChatIcon from "../assets/chat-icon"
+import ChatIcon from "@/components/assets/chat-icon"
 
 import "./styles.css"
 

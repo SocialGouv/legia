@@ -6,8 +6,8 @@ import React, { useRef, useEffect } from "react"
 import Message from "./message"
 import { useChat } from "@/hooks/use-chat"
 import LoadingMessage from "./loading-message"
-import RobotIcon from "../assets/robot-icon"
-import UserIcon from "../assets/user-icon"
+import UserIcon from "@/components/assets/user-icon"
+import RobotIcon from "@/components/assets/robot-icon"
 
 const SCROLL_DELAY = 300
 
