@@ -10,6 +10,10 @@
   @apply px-12;
 }
 
+.chat .messages li:last-child {
+  @apply h-32;
+}
+
 .chat .messages li.assistant {
   @apply bg-white;
   @apply border-y border-slate-200;
@@ -64,33 +68,44 @@
   /* @apply pt-12 pb-3; */
 }
 
-.chat .form-container {
-  /* @apply bg-indigo-100; */
-  @apply flex justify-center;
-}
-
 /******************************************************************************/
 /***** FORM *******************************************************************/
 /******************************************************************************/
 
+.chat .form-container {
+  @apply absolute bottom-0 w-full;
+  /* @apply bg-indigo-100; */
+  @apply flex justify-center;
+}
+
 .chat .form-container form {
   @apply w-1/2;
   @apply flex items-center;
-  @apply p-4 my-6;
-  @apply rounded-lg shadow-lg;
+  @apply p-1;
+  @apply my-6;
+  @apply rounded shadow-lg;
   @apply bg-white;
-  /* @apply border border-slate-300; */
+  /* @apply bg-slate-200; */
+  /* @apply bg-[#FF7067]; */
+  @apply relative;
+  /* @apply border border-slate-100; */
 }
 
 .chat .form-container form textarea {
   @apply flex-1;
   @apply outline-none;
   @apply bg-transparent resize-none;
+  /* @apply placeholder:text-white text-white; */
+  @apply bg-white;
+  @apply rounded p-3;
+  @apply text-lg;
 }
 
 .chat .form-container form button {
-  /* @apply text-[#FF7067]; */
-  @apply text-slate-200;
+  @apply text-slate-300 hover:text-[#FF7067] focus:text-[#FF7067];
+  @apply absolute right-3;
+  @apply outline-none;
+  /* @apply text-slate-200; */
 }
 
 .chat .markdown-body {

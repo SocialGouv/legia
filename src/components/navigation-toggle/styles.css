@@ -2,6 +2,6 @@
   @apply m-3;
   @apply cursor-pointer;
   @apply absolute z-10;
-  @apply text-slate-400 transition-colors;
-  @apply hover:text-slate-300;
+  @apply text-slate-300 transition-colors;
+  @apply hover:text-[#FF7067] focus:text-[#FF7067];
 }
