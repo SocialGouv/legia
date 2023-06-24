@@ -84,7 +84,7 @@ const Form = () => {
           value={prompt}
           cacheMeasurements
           {...register("prompt")}
-          placeholder="Send a message..."
+          placeholder="Envoyez un message..."
           onChange={({ target: { value } }: { target: { value: string } }) =>
             setPrompt(value)
           }
