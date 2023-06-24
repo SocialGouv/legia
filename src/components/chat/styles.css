@@ -1,0 +1,92 @@
+.chat {}
+
+.chat .messages {}
+
+.chat .messages li {
+  @apply px-12;
+}
+
+.chat .messages li:last-child {
+  @apply h-28;
+}
+
+.chat .messages li.assistant {
+  @apply bg-white;
+  @apply border-y border-slate-200;
+}
+
+.chat .messages li.user {
+  @apply bg-transparent;
+}
+
+.chat .messages li .message-container {
+  @apply px-4 my-6;
+  @apply flex gap-x-6;
+  @apply container mx-auto;
+}
+
+.chat .messages li .message-container .icon {
+  @apply bg-slate-200;
+  @apply w-16 h-16 rounded-full;
+  @apply flex justify-center items-center;
+}
+
+.chat .messages li.user .message-container .icon {
+  @apply bg-white;
+}
+
+.chat .messages .message {
+  @apply mt-5;
+  @apply flex-1;
+  @apply flex flex-col;
+}
+
+.chat .messages .message .info {
+  @apply pt-3;
+  @apply flex justify-between;
+  @apply text-sm text-slate-500;
+}
+
+.chat .messages .message .markdown-body {
+  @apply flex-1;
+}
+
+/******************************************************************************/
+/***** FORM *******************************************************************/
+/******************************************************************************/
+
+.chat .form-container {
+  @apply flex justify-center;
+  @apply absolute bottom-0 w-full;
+}
+
+.chat .form-container form {
+  @apply w-1/2;
+  @apply p-1 my-6;
+  @apply relative;
+  @apply bg-white;
+  @apply flex items-center;
+  @apply rounded shadow-lg;
+}
+
+.chat .form-container form textarea {
+  @apply p-3;
+  @apply flex-1;
+  @apply text-lg;
+  @apply rounded outline-none;
+  @apply bg-transparent resize-none;
+}
+
+.chat .form-container form button {
+  @apply outline-none;
+  @apply absolute right-3;
+  @apply text-slate-300 hover:text-[#FF7067] focus:text-[#FF7067];
+}
+
+.chat .markdown-body {
+  background-color: transparent !important;
+}
+
+.chat .markdown-body pre > div {
+  padding: 12px 16px !important;
+}

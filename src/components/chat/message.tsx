@@ -12,7 +12,7 @@ import type { Message } from "@/hooks/use-chat"
 
 const Message = ({
   message: {
-    data: { content, role },
+    data: { content },
     metadata: { creationDate, tokens },
   },
 }: {
@@ -22,7 +22,7 @@ const Message = ({
     creationDate instanceof Date ? creationDate : new Date(creationDate)
 
   return (
-    <div className={`message ${role}`}>
+    <div className="message">
       <div className="markdown-body">
         <ReactMarkdown
           // remarkPlugins={[[remarkGfm, { singleTilde: false }]]}

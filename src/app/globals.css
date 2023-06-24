@@ -6,387 +6,77 @@
   html {
     @apply flex flex-col h-full overflow-hidden;
   }
-
   body {
-    @apply
-    sm
-    flex
-    flex-1
-    gap-y-3
-    text-base
-    to-pink-200
-    antialiased
-    bg-no-repeat
-    from-sky-400
-    overflow-hidden
-    ;
+    @apply flex-1 flex overflow-hidden;
+    @apply antialiased text-base text-slate-800;
+    @apply bg-gradient-to-br from-white to-slate-300;
 
     font-family: var(--font-source-sans-pro);
-
-    background-size: 50rem 35rem, auto;
-    background-position: calc(100vw - 30rem) calc(100vh - 27rem), 0 0;
-    background-image: url(/clouds.webp), linear-gradient(to bottom right, var(--tw-gradient-stops));
   }
-
+  nav {
+    @apply flex flex-col w-64 transition-all overflow-hidden;
+  }
   main {
-    @apply
-    flex
-    flex-1
-    flex-col
-    relative
-    overflow-auto
-    scroll-smooth
-    ;
+    @apply relative flex-1 flex flex-col;
   }
-  
-  /* h1 {
-    @apply container mx-auto px-12 text-xl text-sky-600;
-  } */
-  h2 {
-    @apply text-3xl;
+  .page {
+    @apply justify-center items-center;
+    @apply relative flex-1 flex flex-col overflow-hidden;
   }
-  
-  button, button[type="submit"] {
-    @apply
-    px-3
-    py-1
-    w-28
-    flex
-    text-sm
-    rounded
-    relative
-    text-white
-    bg-pink-400
-    items-center
-    font-semibold
-    justify-center
-    transition-all
-    /* text-stone-100 */
-    focus:shadow-lg
-    active:enabled:shadow
-    hover:enabled:shadow-lg
-    focus-visible:outline-none
-    hover:bg-pink-500
-    active:bg-pink-300
-    disabled:bg-pink-300
-    disabled:text-pink-200
-    sm:w-36
-    sm:text-base
-    ;
-  }
-
-  button.secondary {
-    @apply bg-sky-400;
-  }
-  
-  input, textarea {
-    @apply
-    px-2
-    py-1
-    text-sm
-    rounded
-    resize-none
-    border-none
-    focus:ring-2
-    focus:border-none
-    focus:outline-none
-    sm:text-base
-    bg-stone-100
-    text-gray-800
-    focus:ring-pink-500
-    ;
-  }
-
-  label {
-    @apply flex flex-col flex-1 gap-1 text-pink-500 text-sm sm:text-base;
-  }
-
-  a[href] {
-     @apply text-pink-500;
-  }
-
-  a[href]:hover {
-    @apply underline;
- }
 }
 
 @layer components {
-  .form-container {
-    @apply
-    px-6
-    left-0
-    right-0
-    bottom-0
-    absolute
-    to-white
-    bg-no-repeat
-    from-transparent
-    ;
-
-    background-size: auto;
-    background-position: 0 0;
-    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  .drawer-icon {
+    @apply h-6 w-6;
+  }
+  .calculator-icon {
+    @apply h-6 w-6;
+  }
+  .calendar-arrow-icon {
+    @apply h-6 w-6;
+  }
+  .clock-arrow-icon {
+    @apply h-6 w-6;
+  }
+  .file-magnifier-icon {
+    @apply h-6 w-6;
+  }
+  .book-icon {
+    @apply h-6 w-6;
+  }
+  .chat-icon {
+    @apply h-6 w-6;
+  }
+  .send-icon {
+    @apply h-6 w-6 stroke-2;
+  }
+  .arrow-icon {
+    @apply h-6 w-6;
+  }
+  .robot-icon {
+    @apply h-8 w-8 fill-sky-900;
+  }
+  .user-icon {
+    @apply h-8 w-8 fill-sky-900;
   }
 
-  form {
-    @apply
-    p-6
-    z-10
-    flex
-    mt-5
-    mb-10
-    gap-3
-    rounded
-    mx-auto
-    relative
-    container
-    shadow-lg
-    bg-pink-200
-    ;
-  }
-
-  form textarea {
-    @apply flex-1;
-  }
-
-  .spinner {
-    @apply animate-spin w-10 h-10;
-  }
-
-  .spinner.sm {
-    @apply w-5 h-5;
-  }
-
-  .loading-mask {
-    @apply
-    flex
-    top-0
-    left-0
-    right-0
-    bottom-0
-    absolute
-    items-center
-    bg-transparent
-    justify-center
-    ;
-  }
-
-  .loading-mask .spinner {
-    @apply fill-stone-100 text-slate-400;
-  }
-
-  .messages {
-    @apply
-    flex
-    px-14
-    pt-6
-    gap-6
-    pb-12
-    mb-12
-    flex-1
-    mx-auto
-    flex-col
-    container
-    ;
-  }
-
-  .message {
-    @apply
-    px-6
-    py-4
-    flex-1
-    rounded
-    relative
-    shadow
-    bg-slate-50
-    text-neutral-500
-    ;
-  }
-
-  .message.assistant {
-    @apply mr-48 bg-blue-100;
-  }
-
-  .message.user {
-    @apply ml-48 bg-green-100;
-  }
-
-  .message .info {
-    @apply flex justify-between text-sm text-neutral-400 mt-2;
-  }
-
-  .message pre {
-    @apply !bg-transparent;
-  }
-
-  .timer {
-    @apply ml-3 text-sm font-semibold text-pink-400;
-  }
-
-  /* .menu {
-    @apply absolute h-full shadow z-20 bg-white p-3 flex flex-col gap-6;
-  } */
-
-  /* .menu {
-    @apply p-3 flex flex-col gap-6;
-  } */
-
-  .menu-toggle {
-    @apply absolute z-20 top-6 left-6 w-auto
-    focus:shadow-none
-    active:enabled:shadow-none
-    hover:enabled:shadow-none;
-  }
-
-  .menu-toggle svg {
-    @apply text-sky-500;
-  }
-
-  .menu-toggle:hover svg {
-    @apply text-sky-600;
-  }
-
-  .menu {
-    @apply
-    p-6
-    z-30
-    w-72
-    flex
-    fixed
-    top-0
-    gap-6
-    left-0
-    h-full
-    flex-col
-    /* bg-black */
-    bg-white
-    transform
-    /* bg-opacity-50 */
-    translate-x-0
-    transition-transform;
-  }
-
-  .menu.collapsed {
-    @apply -translate-x-full;
-  }
-
-  .controls {
-    @apply flex gap-3;
-  }
-
-  .threads {
-    @apply flex flex-col gap-3;
-  }
-
-  .threads li {
-    @apply flex items-center gap-2;
-  }
-
-  .threads li a {
-    @apply truncate;
-  }
-
-  .threads li a, .threads li svg {
-    @apply text-slate-800;
-    /* @apply text-white; */
-  }
-
-  .threads li.selected a, .threads li.selected svg {
-    @apply text-pink-500;
-  }
-
-  .home {
-    @apply flex-1 flex flex-col items-center justify-center;
-  }
-
-  .home h1 {
-    @apply text-9xl text-sky-900 mb-12;
+  h1 {
+    @apply text-9xl text-[#FF7067] mb-12;
+    
     text-shadow: 0px 1px 1px white;
     font-family: var(--font-dancing-script);
   }
 
-  /* .themes {
-    @apply flex flex-1 px-12;
-  } */
-
-  .themes {
-    /* @apply flex flex-wrap flex-1 items-start content-center justify-center mx-12; */
-    /* @apply flex flex-wrap flex-1 bg-blue-100 items-start; */
+  .chat {
+    @apply flex-1 flex flex-col overflow-hidden;
   }
-
-  .themes a[href] {
-    @apply no-underline;
+  .messages {
+    @apply flex-1 overflow-auto;
   }
-
-  .themes .tile {
-    @apply
-    m-6
-    py-3
-    pr-6
-    pl-1
-    /* pl-40 */
-    rounded
-    text-lg
-    bg-white
-    shadow-lg
-    text-slate-800
-    hover:shadow-xl
-    ;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    background-position: 1rem center;
+  .menu {
+    @apply flex-1 w-64 flex flex-col overflow-hidden;
   }
-
-  .themes .tile.retirement {
-    background-image: url(/illustrations/calculator.png);
-  }
-
-  .themes .tile.insurance {
-    background-image: url(/illustrations/health-insurance.png);
-  }
-
-  .themes .tile.train {
-    background-image: url(/illustrations/train.png);
-  }
-
-  .themes .tile.education {
-    background-image: url(/illustrations/education.png);
-  }
-
-  .themes .tile.court {
-    background-image: url(/illustrations/court.png);
-  }
-
-  .themes .tile h2 {
-    @apply mb-3;
-    font-weight: 600;
-  }
-
-  .themes .tile .text {
-    @apply ml-32 my-3;
-  }
-
-  footer {
-    @apply
-    px-7
-    flex
-    mb-2
-    mx-auto
-    text-sm
-    relative
-    container
-    text-sky-400
-    justify-between
-    ;
-  }
-
-  .markdown-body {
-    background-color: transparent !important;
-  }
-
-  .markdown-body pre > div {
-    padding: 12px 16px !important;
+  .threads {
+    @apply flex-1 overflow-auto;
   }
 }

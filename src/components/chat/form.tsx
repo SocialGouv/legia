@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form"
 import type { ChatCompletionRequestMessage } from "openai"
 import ReactTextareaAutosize from "react-textarea-autosize"
 
+import SendIcon from "../assets/send-icon"
 import { useChat, type Message } from "@/hooks/use-chat"
 
 type FormData = { prompt: string }
@@ -72,10 +73,6 @@ const Form = () => {
     }
   }
 
-  // const clear = () => {
-  //   localStorage.removeItem("messages")
-  // }
-
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -88,30 +85,13 @@ const Form = () => {
           cacheMeasurements
           {...register("prompt")}
           placeholder="Send a message..."
-          onChange={({ target: { value } }) => setPrompt(value)}
+          onChange={({ target: { value } }: { target: { value: string } }) =>
+            setPrompt(value)
+          }
         />
-        <button type="submit">Submit</button>
-        {/* {messages.length > 0 && (
-          <button
-            type="button"
-            onClick={() => clear()}
-            title="reset conversation"
-            className="secondary w-12"
-          >
-            <svg
-              fill="none"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-6 w-6 text-white"
-            >
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          </button>
-        )} */}
+        <button type="submit">
+          <SendIcon />
+        </button>
       </form>
     </div>
   )

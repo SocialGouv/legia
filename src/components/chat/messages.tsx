@@ -1,11 +1,13 @@
 "use client"
 
-import { v4 as uuidv4 } from "uuid"
+import { v4 as uuid } from "uuid"
 import React, { useRef, useEffect } from "react"
 
 import Message from "./message"
 import { useChat } from "@/hooks/use-chat"
 import LoadingMessage from "./loading-message"
+import UserIcon from "@/components/assets/user-icon"
+import RobotIcon from "@/components/assets/robot-icon"
 
 const SCROLL_DELAY = 300
 
@@ -26,8 +28,13 @@ const Messages = () => {
   return (
     <ul className="messages">
       {messages.map((message, i) => (
-        <li key={uuidv4()}>
-          <Message message={message} />
+        <li key={`message-${uuid()}`} className={message.data.role}>
+          <div className="message-container">
+            <div className="icon">
+              {message.data.role === "user" ? <UserIcon /> : <RobotIcon />}
+            </div>
+            <Message message={message} />
+          </div>
         </li>
       ))}
       {status === "loading" && (
