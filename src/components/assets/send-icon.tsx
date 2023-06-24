@@ -1,19 +1,16 @@
 export default function SendIcon() {
   return (
     <svg
-      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
       fill="none"
-      height="24"
-      strokeWidth="2"
-      viewBox="0 0 24 24"
       className="send-icon"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      strokeWidth="2"
     >
-      <path stroke="none" d="M0 0h24v24H0z" />
-      <line x1="10" y1="14" x2="21" y2="3" />
-      <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" />
+      <path
+        d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z"
+        fill="currentColor"
+      ></path>
     </svg>
   )
 }

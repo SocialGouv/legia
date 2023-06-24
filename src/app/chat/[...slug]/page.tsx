@@ -1,6 +1,8 @@
 import Chat from "@/components/chat"
 import useThemes from "@/hooks/use-themes"
 
+import "./styles.css"
+
 export default function Page({
   params: {
     slug: [themeSlug, id],
@@ -15,9 +17,13 @@ export default function Page({
   return (
     <div className="page">
       <div className="header">
-        <div>{Icon && <Icon />}</div>
-        <div>{theme?.title}</div>
-        <div>{theme?.description}</div>
+        <div className="header-container">
+          <div className="icon">{Icon && <Icon />}</div>
+          <div className="text">
+            <div className="title">{theme?.title}</div>
+            <div className="description">{theme?.description}</div>
+          </div>
+        </div>
       </div>
       <Chat id={id} theme={themeSlug} />
     </div>

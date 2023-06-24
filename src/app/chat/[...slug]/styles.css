@@ -1,0 +1,41 @@
+.page {
+  /* @apply bg-pink-200; */
+  @apply items-stretch justify-start;
+}
+
+.header {
+  /* @apply flex-1; */
+  @apply bg-white;
+  /* @apply flex gap-x-6; */
+  /* @apply container mx-auto; */
+  @apply p-12;
+  @apply shadow-lg;
+  @apply border-b border-slate-200;
+}
+
+.header-container {
+  @apply container mx-auto;
+  @apply flex gap-x-6;
+}
+
+.header .icon {
+  @apply bg-slate-100;
+  @apply rounded-full w-24 h-24;
+  @apply flex justify-center items-center;
+}
+
+.header .icon svg {
+  @apply w-14 h-14;
+}
+
+.header .text {
+  @apply flex flex-col justify-center;
+}
+
+.header .text .title {
+  @apply text-3xl font-semibold text-sky-900;
+}
+
+.header .text .description {
+  @apply text-xl text-sky-900;
+}

@@ -51,10 +51,17 @@
     @apply h-6 w-6;
   }
   .send-icon {
-    @apply h-6 w-6;
+    @apply h-6 w-6 stroke-2;
   }
   .arrow-icon {
     @apply h-6 w-6;
+  }
+  .robot-icon {
+    /* @apply h-8 w-8 fill-[#FF7067]; */
+    @apply h-8 w-8 fill-sky-900;
+  }
+  .user-icon {
+    @apply h-8 w-8 fill-sky-900;
   }
 
   h1 {

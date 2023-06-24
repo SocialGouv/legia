@@ -1,5 +1,5 @@
 .navigation-toggle {
-  @apply m-12;
+  @apply m-3;
   @apply cursor-pointer;
   @apply absolute z-10;
   @apply text-slate-400 transition-colors;
