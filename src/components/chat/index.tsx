@@ -1,16 +1,13 @@
 import Form from "./form"
 import Messages from "./messages"
-import { ChatProvider } from "@/hooks/use-chat"
 
 import "./styles.css"
 
 export default function Chat({ theme, id }: { theme: string; id: string }) {
   return (
     <div className="chat">
-      <ChatProvider threadId={id}>
-        <Messages />
-        <Form />
-      </ChatProvider>
+      <Messages id={id} />
+      <Form id={id} />
     </div>
   )
 }

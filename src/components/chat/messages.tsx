@@ -1,19 +1,23 @@
 "use client"
 
-import { v4 as uuid } from "uuid"
+import { useChat } from "ai/react"
 import React, { useRef, useEffect } from "react"
 
 import Message from "./message"
-import { useChat } from "@/hooks/use-chat"
-import LoadingMessage from "./loading-message"
 import UserIcon from "@/components/assets/user-icon"
 import RobotIcon from "@/components/assets/robot-icon"
 
 const SCROLL_DELAY = 300
 
-const Messages = () => {
-  const { messages, status } = useChat()
+const Messages = ({ id }: { id: string }) => {
   const messagesEndRef = useRef<HTMLLIElement | null>(null)
+
+  const { messages, setMessages } = useChat({ id })
+
+  useEffect(() => {
+    const messages = JSON.parse(localStorage.getItem(id) || "[]")
+    setMessages(messages)
+  }, [id, setMessages])
 
   const scrollToBottom = () => {
     setTimeout(() => {
@@ -25,23 +29,22 @@ const Messages = () => {
     scrollToBottom()
   }, [messages])
 
+  useEffect(() => {
+    localStorage.setItem(id, JSON.stringify(messages))
+  }, [id, messages])
+
   return (
     <ul className="messages">
       {messages.map((message, i) => (
-        <li key={`message-${uuid()}`} className={message.data.role}>
+        <li key={message.id} className={message.role}>
           <div className="message-container">
             <div className="icon">
-              {message.data.role === "user" ? <UserIcon /> : <RobotIcon />}
+              {message.role === "user" ? <UserIcon /> : <RobotIcon />}
             </div>
             <Message message={message} />
           </div>
         </li>
       ))}
-      {status === "loading" && (
-        <li>
-          <LoadingMessage />
-        </li>
-      )}
       <li ref={messagesEndRef}></li>
     </ul>
   )
