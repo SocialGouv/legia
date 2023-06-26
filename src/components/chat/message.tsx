@@ -8,18 +8,10 @@ import SyntaxHighlighter, {
 } from "react-syntax-highlighter"
 import { tomorrowNight } from "react-syntax-highlighter/dist/cjs/styles/hljs"
 
-import type { Message } from "@/hooks/use-chat"
+import { type Message } from "ai/react"
 
-const Message = ({
-  message: {
-    data: { content },
-    metadata: { creationDate, tokens },
-  },
-}: {
-  message: Message
-}) => {
-  const date =
-    creationDate instanceof Date ? creationDate : new Date(creationDate)
+const Message = ({ message: { content, createdAt } }: { message: Message }) => {
+  const date = createdAt instanceof Date ? createdAt : new Date()
 
   return (
     <div className="message">
@@ -49,7 +41,7 @@ const Message = ({
         />
       </div>
       <div className="info">
-        {tokens && <div>tokens: {tokens}</div>}
+        {/* {tokens && <div>tokens: {tokens}</div>} */}
         <div className="flex-1 text-right">{format(date, "PPPppp")}</div>
       </div>
     </div>
