@@ -4,9 +4,13 @@ import { useChat } from "ai/react"
 import ReactTextareaAutosize from "react-textarea-autosize"
 
 import SendIcon from "../assets/send-icon"
+import SpinnerIcon from "../assets/spinner-icon"
 
-const Form = ({ id }: { id: string }) => {
-  const { input, handleInputChange, handleSubmit } = useChat({ id })
+const Form = ({ id, theme }: { id: string; theme: string }) => {
+  const { isLoading, input, handleInputChange, handleSubmit } = useChat({
+    id,
+    body: { theme },
+  })
 
   return (
     <div className="form-container">
@@ -22,7 +26,7 @@ const Form = ({ id }: { id: string }) => {
           placeholder="Envoyez un message..."
         />
         <button type="submit">
-          <SendIcon />
+          {isLoading ? <SpinnerIcon /> : <SendIcon />}
         </button>
       </form>
     </div>

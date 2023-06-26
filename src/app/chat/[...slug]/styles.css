@@ -4,6 +4,7 @@
 
 .header {
   @apply p-12;
+  @apply relative;
   @apply shadow-lg;
   @apply bg-white;
   @apply border-b border-slate-200;

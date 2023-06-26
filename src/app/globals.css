@@ -53,6 +53,15 @@
   .arrow-icon {
     @apply h-6 w-6;
   }
+  .spinner-icon {
+    @apply h-6 w-6 animate-spin;
+  }
+  .spinner-icon circle {
+    @apply stroke-slate-300;
+  }
+  .spinner-icon path {
+    @apply fill-slate-300;
+  }
   .robot-icon {
     @apply h-8 w-8 fill-sky-900;
   }
