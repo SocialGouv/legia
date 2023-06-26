@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/SocialGouv/legia/compare/v1.4.1...v1.5.0) (2023-06-26)
+
+
+### Features
+
+* send message on enter ([dc38b2d](https://github.com/SocialGouv/legia/commit/dc38b2d75256556489890597a8c1350bd45c74bb))
+
 ## [1.4.1](https://github.com/SocialGouv/legia/compare/v1.4.0...v1.4.1) (2023-06-26)
 
 
