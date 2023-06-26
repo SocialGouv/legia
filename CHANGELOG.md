@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/SocialGouv/legia/compare/v1.5.0...v1.5.1) (2023-06-26)
+
+
+### Bug Fixes
+
+* responsive home ([bb40208](https://github.com/SocialGouv/legia/commit/bb40208ae8454f4931e78de3a86a378546e67151))
+
 # [1.5.0](https://github.com/SocialGouv/legia/compare/v1.4.1...v1.5.0) (2023-06-26)
 
 
