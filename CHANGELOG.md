@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/SocialGouv/legia/compare/v1.3.0...v1.4.0) (2023-06-26)
+
+
+### Features
+
+* show loading status ([bc093e7](https://github.com/SocialGouv/legia/commit/bc093e776a8ecb00c2197cf736cb96035c8b7b5e))
+
 # [1.3.0](https://github.com/SocialGouv/legia/compare/v1.2.1...v1.3.0) (2023-06-26)
 
 
