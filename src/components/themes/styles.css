@@ -1,14 +1,15 @@
 .themes.big {
-  @apply flex flex-wrap;
-  @apply sm:w-3/4 md:w-1/2;
+  @apply mx-auto;
+  @apply grid sm:grid-cols-1 md:grid-cols-2 grid-flow-row;
 }
 
 .themes.big li {
   @apply w-1/2;
-  @apply flex h-80;
+  @apply flex h-[18rem] w-[22rem];
 }
 
 .themes.big li .theme {
+  @apply flex-1;
   @apply relative;
   @apply cursor-pointer;
   @apply flex flex-col items-center gap-y-3;
@@ -43,7 +44,7 @@
 
 .themes.big li .theme .text .link {
   @apply text-[#FF7067];
-  @apply absolute bottom-0 w-full;
+  @apply absolute -bottom-3 w-full;
   @apply opacity-0 transition-opacity;
   @apply ease-in-out delay-150 duration-300;
   @apply flex gap-x-2 justify-center items-center;

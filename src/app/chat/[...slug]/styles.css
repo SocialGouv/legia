@@ -1,5 +1,5 @@
 .page {
-  @apply items-stretch justify-start;
+  @apply flex items-stretch justify-start;
 }
 
 .header {
