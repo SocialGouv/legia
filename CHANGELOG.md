@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/SocialGouv/legia/compare/v1.4.0...v1.4.1) (2023-06-26)
+
+
+### Bug Fixes
+
+* build fix ([c174fd7](https://github.com/SocialGouv/legia/commit/c174fd71fe1924457ab9c54358fd0754abb350c4))
+
 # [1.4.0](https://github.com/SocialGouv/legia/compare/v1.3.0...v1.4.0) (2023-06-26)
 
 
