@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/SocialGouv/legia/compare/v1.2.1...v1.3.0) (2023-06-26)
+
+
+### Features
+
+* stream responses ([#6](https://github.com/SocialGouv/legia/issues/6)) ([40cd167](https://github.com/SocialGouv/legia/commit/40cd167b06027339e66532f3c879042ca765d1a5))
+
 ## [1.2.1](https://github.com/SocialGouv/legia/compare/v1.2.0...v1.2.1) (2023-06-24)
 
 
