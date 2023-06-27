@@ -1,3 +1,10 @@
 app:
   autoscale:
     enabled: true
+  resources:
+    requests:
+      cpu: 0.2
+      memory: 200Mi
+    limits:
+      cpu: 1.5
+      memory: 2Gi
