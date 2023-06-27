@@ -1,11 +1,9 @@
 "use client"
 
 import { format } from "date-fns"
-// import remarkGfm from "remark-gfm"
+import remarkGfm from "remark-gfm"
 import ReactMarkdown from "react-markdown"
-import SyntaxHighlighter, {
-  type SyntaxHighlighterProps,
-} from "react-syntax-highlighter"
+import SyntaxHighlighter from "react-syntax-highlighter"
 import { tomorrowNight } from "react-syntax-highlighter/dist/cjs/styles/hljs"
 
 import { type Message } from "ai/react"
@@ -17,22 +15,21 @@ const Message = ({ message: { content, createdAt } }: { message: Message }) => {
     <div className="message">
       <div className="markdown-body">
         <ReactMarkdown
-          // remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
-          children={content || ""}
+          children={content}
+          remarkPlugins={[remarkGfm]}
           components={{
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || "")
               return !inline && match ? (
                 <SyntaxHighlighter
-                  PreTag="div"
-                  language={match[1]}
+                  {...props}
+                  children={String(children).replace(/\n$/, "")}
                   style={tomorrowNight}
-                  {...(props as SyntaxHighlighterProps)}
-                >
-                  {String(children).replace(/\n$/, "")}
-                </SyntaxHighlighter>
+                  language={match[1]}
+                  PreTag="div"
+                />
               ) : (
-                <code className={className} {...props}>
+                <code {...props} className={className}>
                   {children}
                 </code>
               )
