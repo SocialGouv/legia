@@ -3,7 +3,8 @@ import { FunctionComponent } from "react"
 import BookIcon from "@/components/assets/book-icon"
 import CalculatorIcon from "@/components/assets/calculator-icon"
 import ClockArrowIcon from "@/components/assets/clock-arrow-icon"
-import FileMagnifierIcon from "@/components/assets/file-magnifier-icon"
+// import FileMagnifierIcon from "@/components/assets/file-magnifier-icon"
+import CalendarArrowIcon from "@/components/assets/calendar-arrow-icon"
 
 export interface Theme {
   slug: string
@@ -33,12 +34,19 @@ const themes = [
       "Estimez la durée de préavis à respecter en cas de licenciement",
   },
   {
-    icon: FileMagnifierIcon,
-    slug: "trouver-convention-collective",
-    title: "Trouver sa convention collective",
+    icon: CalendarArrowIcon,
+    slug: "preavis-depart-retraite",
+    title: "Préavis de départ à la retraite",
     description:
-      "Recherchez une convention collective par Entreprise, SIRET, Nom ounuméro IDCC",
+      "Estimez la durée de préavis à respecter en cas de départ à la retraite",
   },
+  // {
+  //   icon: FileMagnifierIcon,
+  //   slug: "trouver-convention-collective",
+  //   title: "Trouver sa convention collective",
+  //   description:
+  //     "Recherchez une convention collective par Entreprise, SIRET, Nom ounuméro IDCC",
+  // },
 ] as Theme[]
 
 function getTheme(slug: string) {
