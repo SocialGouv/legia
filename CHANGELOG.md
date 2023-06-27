@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/SocialGouv/legia/compare/v1.6.0...v1.6.1) (2023-06-27)
+
+
+### Bug Fixes
+
+* footer version ([#7](https://github.com/SocialGouv/legia/issues/7)) ([7241463](https://github.com/SocialGouv/legia/commit/72414636b63ee67de3c29feb9d653d83b09c1686))
+
 # [1.6.0](https://github.com/SocialGouv/legia/compare/v1.5.1...v1.6.0) (2023-06-27)
 
 
