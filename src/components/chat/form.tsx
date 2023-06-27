@@ -32,9 +32,9 @@ const Form = ({ id, theme }: { id: string; theme: string }) => {
           maxRows={8}
           value={input}
           cacheMeasurements
+          onKeyDown={handleKeyDown}
           onChange={handleInputChange}
           placeholder="Envoyez un message..."
-          onKeyDown={handleKeyDown}
         />
         <button type="submit">
           {isLoading ? <SpinnerIcon /> : <SendIcon />}

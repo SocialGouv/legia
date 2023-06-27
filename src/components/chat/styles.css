@@ -75,7 +75,6 @@
   @apply text-lg;
   @apply rounded outline-none;
   @apply bg-transparent resize-none;
-  /* @apply bg-pink-200; */
 }
 
 .chat .form-container form button {

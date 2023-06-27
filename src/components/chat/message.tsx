@@ -41,7 +41,6 @@ const Message = ({ message: { content, createdAt } }: { message: Message }) => {
         />
       </div>
       <div className="info">
-        {/* {tokens && <div>tokens: {tokens}</div>} */}
         <div className="flex-1 text-right">{format(date, "PPPppp")}</div>
       </div>
     </div>

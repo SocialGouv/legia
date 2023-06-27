@@ -1,8 +1,6 @@
 import { Configuration, OpenAIApi } from "openai-edge"
 import { OpenAIStream, StreamingTextResponse } from "ai"
 
-import prompts from "./prompts"
-
 interface Message {
   content: string
   role: "system" | "assistant" | "user"
@@ -18,15 +16,7 @@ const openai = new OpenAIApi(config)
 export const runtime = "edge"
 
 export async function POST(req: Request) {
-  const {
-    messages,
-    theme,
-  }: { messages: Message[]; theme: keyof typeof prompts } = await req.json()
-  console.log("REQ", theme, messages, Object.keys(prompts))
-
-  // if (Object.keys(prompts).includes(theme)) {
-  //   messages.unshift({ role: "system", content: prompts[theme].system })
-  // }
+  const { messages }: { messages: Message[] } = await req.json()
 
   const response = await openai.createChatCompletion({
     messages,

@@ -4,7 +4,6 @@ import BookIcon from "@/components/assets/book-icon"
 import CalculatorIcon from "@/components/assets/calculator-icon"
 import ClockArrowIcon from "@/components/assets/clock-arrow-icon"
 import FileMagnifierIcon from "@/components/assets/file-magnifier-icon"
-import CalendarArrowIcon from "@/components/assets/calendar-arrow-icon"
 
 export interface Theme {
   slug: string
@@ -20,13 +19,6 @@ const themes = [
     title: "Indemnité de licenciement",
     description: "Estimez simplement le montant de l'indemnité de licenciement",
   },
-  // {
-  //   icon: CalendarArrowIcon,
-  //   slug: "preavis-depart-ou-retraite",
-  //   title: "Préavis de départ ou de mise à la retraite",
-  //   description:
-  //     "Estimez la durée de préavis à respecter en cas de départ à la retraite ou de mise à la retraite",
-  // },
   {
     icon: BookIcon,
     slug: "preavis-demission",

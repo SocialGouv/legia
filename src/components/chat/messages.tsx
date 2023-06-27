@@ -6,24 +6,30 @@ import React, { useRef, useEffect } from "react"
 import Message from "./message"
 import UserIcon from "@/components/assets/user-icon"
 import RobotIcon from "@/components/assets/robot-icon"
+import usePrompts, { type Theme } from "@/hooks/use-prompts"
 
 const SCROLL_DELAY = 300
 
-const Messages = ({ id }: { id: string }) => {
+const Messages = ({ id, theme }: { id: string; theme: Theme }) => {
+  const { prompts } = usePrompts()
   const messagesEndRef = useRef<HTMLLIElement | null>(null)
 
-  const { messages, setMessages } = useChat({ id })
-
-  useEffect(() => {
-    const messages = JSON.parse(localStorage.getItem(id) || "[]")
-    setMessages(messages)
-  }, [id, setMessages])
+  const { messages, append, setMessages } = useChat({ id })
 
   const scrollToBottom = () => {
     setTimeout(() => {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
     }, SCROLL_DELAY)
   }
+
+  useEffect(() => {
+    const messages = JSON.parse(localStorage.getItem(id) || "[]")
+    if (messages.length) {
+      setMessages(messages)
+    } else {
+      append({ role: "system", content: prompts[theme].system })
+    }
+  }, [id, theme, setMessages, append, prompts])
 
   useEffect(() => {
     scrollToBottom()
@@ -35,7 +41,7 @@ const Messages = ({ id }: { id: string }) => {
 
   return (
     <ul className="messages">
-      {messages.map((message, i) => (
+      {messages.slice(1).map((message, i) => (
         <li key={message.id} className={message.role}>
           <div className="message-container">
             <div className="icon">
