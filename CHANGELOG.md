@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/SocialGouv/legia/compare/v1.8.3...v1.8.4) (2023-06-27)
+
+
+### Bug Fixes
+
+* markdown ul/li ([149eff8](https://github.com/SocialGouv/legia/commit/149eff87ead384026e155f0fe165076de4164f0f))
+
 ## [1.8.3](https://github.com/SocialGouv/legia/compare/v1.8.2...v1.8.3) (2023-06-27)
 
 
