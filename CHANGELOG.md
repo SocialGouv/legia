@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/SocialGouv/legia/compare/v1.8.0...v1.8.1) (2023-06-27)
+
+
+### Bug Fixes
+
+* k8s resources ([a22860a](https://github.com/SocialGouv/legia/commit/a22860a51cdb5e7242fe98b105c0963aaf4e4154))
+
 # [1.8.0](https://github.com/SocialGouv/legia/compare/v1.7.0...v1.8.0) (2023-06-27)
 
 
