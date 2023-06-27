@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/SocialGouv/legia/compare/v1.8.1...v1.8.2) (2023-06-27)
+
+
+### Bug Fixes
+
+* preavis de retraite ([81d811c](https://github.com/SocialGouv/legia/commit/81d811cb54e19b27375a451e185f62001a54ee7a))
+
 ## [1.8.1](https://github.com/SocialGouv/legia/compare/v1.8.0...v1.8.1) (2023-06-27)
 
 
