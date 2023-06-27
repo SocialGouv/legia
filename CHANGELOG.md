@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/SocialGouv/legia/compare/v1.5.1...v1.6.0) (2023-06-27)
+
+
+### Features
+
+* use system messages ([9e8754c](https://github.com/SocialGouv/legia/commit/9e8754c295770a827fda0d3215378876bf2e700b))
+
 ## [1.5.1](https://github.com/SocialGouv/legia/compare/v1.5.0...v1.5.1) (2023-06-26)
 
 
