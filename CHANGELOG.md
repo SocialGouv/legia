@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/SocialGouv/legia/compare/v1.8.2...v1.8.3) (2023-06-27)
+
+
+### Bug Fixes
+
+* demande de patienter ([e29ac97](https://github.com/SocialGouv/legia/commit/e29ac976229d7272f1deab3b10a4bc4edb17495b))
+
 ## [1.8.2](https://github.com/SocialGouv/legia/compare/v1.8.1...v1.8.2) (2023-06-27)
 
 
