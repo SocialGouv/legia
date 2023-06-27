@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/SocialGouv/legia/compare/v1.6.1...v1.7.0) (2023-06-27)
+
+
+### Features
+
+* handle markdown format ([030f281](https://github.com/SocialGouv/legia/commit/030f28176343b33bd4afa0e590d98b994f58eb93))
+
 ## [1.6.1](https://github.com/SocialGouv/legia/compare/v1.6.0...v1.6.1) (2023-06-27)
 
 
