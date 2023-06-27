@@ -1,5 +1,5 @@
 footer {
-  @apply px-2;
+  @apply px-3;
   @apply text-sm;
   @apply text-red-700;
   @apply container mx-auto;
