@@ -1,37 +1,37 @@
 .chat {}
 
-.chat .messages {}
+.chat ul.messages {}
 
-.chat .messages li {
+.chat ul.messages > li {
   @apply px-12;
 }
 
-.chat .messages li:last-child {
+.chat ul.messages > li:last-child {
   @apply h-28;
 }
 
-.chat .messages li.assistant {
+.chat ul.messages > li.assistant {
   @apply bg-white;
   @apply border-y border-slate-200;
 }
 
-.chat .messages li.user {
+.chat ul.messages > li.user {
   @apply bg-transparent;
 }
 
-.chat .messages li .message-container {
+.chat ul.messages > li .message-container {
   @apply px-4 my-6;
   @apply flex gap-x-6;
   @apply container mx-auto;
 }
 
-.chat .messages li .message-container .icon {
+.chat ul.messages > li .message-container .icon {
   @apply bg-slate-200;
   @apply w-16 h-16 rounded-full;
   @apply flex justify-center items-center;
 }
 
-.chat .messages li.user .message-container .icon {
+.chat ul.messages > li.user .message-container .icon {
   @apply bg-white;
 }
 
