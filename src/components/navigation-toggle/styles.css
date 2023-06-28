@@ -2,7 +2,7 @@
   @apply m-3;
   @apply absolute z-10;
   @apply cursor-pointer;
-  @apply hover:text-[#FF7067];
-  @apply text-slate-300 transition-colors;
-  @apply dark:text-slate-600;
+  @apply hover:text-[#FF7067] hover:dark:text-red-900;
+  @apply text-slate-300 dark:text-slate-600;
+  @apply transition-colors;
 }

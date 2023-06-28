@@ -13,6 +13,7 @@ module.exports = {
         "red-300": "0px 1px 1px #fca5a5",
         "red-700": "0px 1px 1px #b91c1c",
         "red-800": "0px 1px 1px #991b1b",
+        "red-500": "0px 1px 1px #ef4444",
       },
     },
   },

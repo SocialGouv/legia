@@ -71,8 +71,8 @@
 
   h1 {
     @apply mx-auto my-16;
-    @apply text-9xl text-[#FF7067];
-    @apply text-shadow-white dark:text-shadow-red-700;
+    @apply text-9xl text-[#FF7067] dark:text-red-900;
+    @apply text-shadow-white dark:text-shadow-red-500;
 
     font-family: var(--font-dancing-script);
   }
