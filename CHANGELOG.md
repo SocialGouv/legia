@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/SocialGouv/legia/compare/v1.8.4...v1.9.0) (2023-06-28)
+
+
+### Features
+
+* add dark theme ([f5f01ee](https://github.com/SocialGouv/legia/commit/f5f01ee2f05e0d2b1daa4d03427bc330b6db52d3))
+
 ## [1.8.4](https://github.com/SocialGouv/legia/compare/v1.8.3...v1.8.4) (2023-06-27)
 
 
