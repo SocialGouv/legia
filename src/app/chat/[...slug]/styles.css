@@ -6,8 +6,8 @@
   @apply p-12;
   @apply relative;
   @apply shadow-lg;
-  @apply bg-white;
-  @apply border-b border-slate-200;
+  @apply bg-white dark:bg-slate-900;
+  @apply border-b border-slate-200 dark:border-slate-700;
 }
 
 .header-container {
@@ -16,9 +16,9 @@
 }
 
 .header .icon {
-  @apply bg-slate-100;
   @apply rounded-full w-24 h-24;
   @apply flex justify-center items-center;
+  @apply bg-slate-100 dark:bg-slate-950;
 }
 
 .header .icon svg {
@@ -30,9 +30,9 @@
 }
 
 .header .text .title {
-  @apply text-3xl font-semibold text-sky-900;
+  @apply text-3xl font-semibold text-sky-900 dark:text-[#4E6896];
 }
 
 .header .text .description {
-  @apply text-xl text-sky-900;
+  @apply text-xl text-sky-900 dark:text-[#4E6896];
 }

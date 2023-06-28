@@ -10,6 +10,7 @@
     @apply flex-1 flex overflow-hidden;
     @apply antialiased text-base text-slate-800;
     @apply bg-gradient-to-br from-white to-slate-300;
+    @apply dark:from-slate-900 dark:to-slate-900;
 
     font-family: var(--font-source-sans-pro);
   }
@@ -71,8 +72,8 @@
   h1 {
     @apply mx-auto my-16;
     @apply text-9xl text-[#FF7067];
-    
-    text-shadow: 0px 1px 1px white;
+    @apply text-shadow-white dark:text-shadow-red-700;
+
     font-family: var(--font-dancing-script);
   }
 

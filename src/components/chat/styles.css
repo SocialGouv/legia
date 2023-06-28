@@ -11,8 +11,8 @@
 }
 
 .chat ul.messages > li.assistant {
-  @apply bg-white;
-  @apply border-y border-slate-200;
+  @apply bg-white dark:bg-slate-800;
+  @apply border-y border-slate-200 dark:border-slate-700;
 }
 
 .chat ul.messages > li.user {
@@ -20,19 +20,24 @@
 }
 
 .chat ul.messages > li .message-container {
-  @apply px-4 my-6;
+  @apply px-4 py-6;
   @apply flex gap-x-6;
   @apply container mx-auto;
 }
 
 .chat ul.messages > li .message-container .icon {
-  @apply bg-slate-200;
   @apply w-16 h-16 rounded-full;
   @apply flex justify-center items-center;
+  @apply bg-slate-200 dark:bg-slate-900;
 }
 
 .chat ul.messages > li.user .message-container .icon {
-  @apply bg-white;
+  @apply bg-white dark:bg-slate-950;
+}
+
+.chat ul.messages > li.assistant .message-container .icon .robot-icon,
+.chat ul.messages > li.user .message-container .icon .user-icon {
+  @apply fill-sky-900 dark:fill-[#4E6896];
 }
 
 .chat .messages .message {
@@ -44,11 +49,12 @@
 .chat .messages .message .info {
   @apply pt-3;
   @apply flex justify-between;
-  @apply text-sm text-slate-500;
+  @apply text-sm text-slate-500 dark:text-slate-600;
 }
 
 .chat .messages .message .markdown-body {
   @apply flex-1;
+  @apply dark:text-slate-400;
 }
 
 /******************************************************************************/
@@ -64,23 +70,25 @@
   @apply w-1/2;
   @apply p-1 my-6;
   @apply relative;
-  @apply bg-white;
   @apply flex items-center;
   @apply rounded shadow-lg;
+  @apply bg-white dark:bg-slate-800;
 }
 
 .chat .form-container form textarea {
-  @apply p-3 mr-12;
   @apply flex-1;
   @apply text-lg;
+  @apply p-3 mr-12;
   @apply rounded outline-none;
   @apply bg-transparent resize-none;
+  @apply dark:placeholder:text-slate-600 dark:text-slate-400;
 }
 
 .chat .form-container form button {
   @apply outline-none;
   @apply absolute right-4;
   @apply text-slate-300 hover:text-[#FF7067] focus:text-[#FF7067];
+  @apply dark:text-slate-700 hover:text-[#FF7067] focus:text-[#FF7067];
 }
 
 .chat .markdown-body {

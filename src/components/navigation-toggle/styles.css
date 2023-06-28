@@ -4,4 +4,5 @@
   @apply cursor-pointer;
   @apply hover:text-[#FF7067];
   @apply text-slate-300 transition-colors;
+  @apply dark:text-slate-600;
 }

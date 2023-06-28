@@ -1,16 +1,16 @@
 nav {
   @apply pt-3 pb-1;
-  @apply bg-[#FF7067];
-  @apply border-r border-slate-200;
+  @apply border-r border-slate-200 dark:border-slate-800;
+  @apply bg-[#FF7067] dark:bg-red-900;
 
   box-shadow: inset -2px 2px 10px -4px rgba(0, 0, 0, 0.6);
 }
 
 nav .title {
   @apply px-2;
-  @apply text-red-700;
-
-  text-shadow: 0px 1px 1px rgb(252 165 165);
+  @apply font-semibold;
+  @apply text-red-700 dark:text-red-950;
+  @apply text-shadow-red-300 dark:text-shadow-red-800;
 }
 
 .threads {
@@ -21,6 +21,7 @@ nav .title {
 .threads li {
   @apply flex gap-x-2 items-center;
   @apply text-slate-300 hover:text-white;
+  @apply dark:text-slate-400 hover:dark:text-slate-200;
 }
 
 .threads li a {
@@ -29,5 +30,5 @@ nav .title {
 }
 
 .threads li.selected {
-  @apply text-white;
+  @apply text-white dark:text-slate-200;
 }

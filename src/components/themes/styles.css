@@ -12,15 +12,16 @@
   @apply flex-1;
   @apply relative;
   @apply cursor-pointer;
+  @apply bg-white dark:bg-slate-800;
   @apply flex flex-col items-center gap-y-3;
-  @apply bg-white m-3 pt-6 pb-6 px-6 rounded shadow-lg;
+  @apply m-3 pt-6 pb-6 px-6 rounded shadow-lg;
   @apply transition ease-in-out delay-150 hover:-translate-y-1 duration-300;
 }
 
 .themes.big li .theme .icon {
-  @apply bg-slate-100;
   @apply rounded-full w-20 h-20;
   @apply flex justify-center items-center;
+  @apply bg-slate-100 dark:bg-slate-900;
 }
 
 .themes.big li .theme .icon svg {
@@ -29,6 +30,7 @@
 
 .themes.big li .theme .text {
   @apply relative;
+  @apply dark:text-slate-400;
   @apply flex-1 flex flex-col gap-y-3;
 }
 
@@ -38,8 +40,8 @@
 
 .themes.big li .theme .text .description {
   @apply flex-1;
-  @apply flex items-center;
   @apply text-center;
+  @apply flex items-center;
 }
 
 .themes.big li .theme .text .link {
@@ -58,6 +60,10 @@
   @apply relative top-0.5;
 }
 
+/******************************************************************************/
+/***** MEDIUM *****************************************************************/
+/******************************************************************************/
+
 .themes.medium {
   @apply px-3 py-4;
   @apply flex flex-col gap-y-3;
@@ -65,20 +71,22 @@
 
 .themes.medium li .theme {
   @apply p-3;
-  @apply bg-white;
   @apply flex gap-x-3;
   @apply cursor-pointer;
   @apply shadow-md rounded;
+  @apply bg-white dark:bg-slate-800;
   @apply transition ease-in-out delay-150 hover:translate-x-1 duration-300;
 }
 
 .themes.medium li .theme .icon {
   @apply w-12 h-12;
-  @apply rounded-full bg-slate-100;
+  @apply rounded-full;
+  @apply bg-slate-100 dark:bg-slate-900;
   @apply flex justify-center items-center;
 }
 
 .themes.medium li .theme .text {
   @apply flex-1;
   @apply flex items-center;
+  @apply dark:text-slate-400;
 }
