@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/SocialGouv/legia/compare/v1.9.1...v1.10.0) (2023-06-28)
+
+
+### Features
+
+* add disclaimer ([355686a](https://github.com/SocialGouv/legia/commit/355686a79dd3044d9715bd436c9cd9f99d9ea66c))
+
 ## [1.9.1](https://github.com/SocialGouv/legia/compare/v1.9.0...v1.9.1) (2023-06-28)
 
 
