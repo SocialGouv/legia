@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/SocialGouv/legia/compare/v1.9.0...v1.9.1) (2023-06-28)
+
+
+### Bug Fixes
+
+* dark theme title and buttons ([975d97c](https://github.com/SocialGouv/legia/commit/975d97c0b95bb143c8fa514842df2f529981ce71))
+
 # [1.9.0](https://github.com/SocialGouv/legia/compare/v1.8.4...v1.9.0) (2023-06-28)
 
 
