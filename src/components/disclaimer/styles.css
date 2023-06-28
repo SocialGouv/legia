@@ -1,0 +1,6 @@
+.disclaimer {
+  @apply rounded;
+  @apply bg-white;
+  @apply text-center;
+  @apply mx-auto p-3 mb-8;
+}
