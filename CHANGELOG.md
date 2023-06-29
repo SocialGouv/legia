@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/SocialGouv/legia/compare/v1.10.0...v1.10.1) (2023-06-29)
+
+
+### Bug Fixes
+
+* dark disclaimer ([3aede0a](https://github.com/SocialGouv/legia/commit/3aede0ac0b7b2670aab23787a001b97b7a4d2041))
+
 # [1.10.0](https://github.com/SocialGouv/legia/compare/v1.9.1...v1.10.0) (2023-06-28)
 
 
