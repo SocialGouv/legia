@@ -2,17 +2,16 @@ import Chat from "@/components/chat"
 import useThemes from "@/hooks/use-themes"
 
 import "./styles.css"
-import { Theme } from "@/hooks/use-prompts"
 
 export default function Page({
   params: {
-    slug: [themeSlug, id],
+    slug: [id],
   },
 }: {
-  params: { slug: [Theme, string] }
+  params: { slug: [string] }
 }) {
   const { getTheme } = useThemes()
-  const theme = getTheme(themeSlug)
+  const theme = getTheme("test")
   const Icon = theme?.icon
 
   return (
@@ -26,7 +25,7 @@ export default function Page({
           </div>
         </div>
       </div>
-      <Chat id={id} theme={themeSlug} />
+      <Chat id={id} />
     </div>
   )
 }

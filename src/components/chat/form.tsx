@@ -8,10 +8,9 @@ import SpinnerIcon from "../assets/spinner-icon"
 
 import type { KeyboardEvent } from "react"
 
-const Form = ({ id, theme }: { id: string; theme: string }) => {
+const Form = ({ id }: { id: string }) => {
   const { isLoading, input, handleInputChange, handleSubmit } = useChat({
     id,
-    body: { theme },
   })
 
   const handleKeyDown = (e: KeyboardEvent<HTMLTextAreaElement>) => {

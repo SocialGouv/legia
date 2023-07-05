@@ -6,30 +6,19 @@ import React, { useRef, useEffect } from "react"
 import Message from "./message"
 import UserIcon from "@/components/assets/user-icon"
 import RobotIcon from "@/components/assets/robot-icon"
-import usePrompts, { type Theme } from "@/hooks/use-prompts"
 
 const SCROLL_DELAY = 300
 
-const Messages = ({ id, theme }: { id: string; theme: Theme }) => {
-  const { prompts } = usePrompts()
+const Messages = ({ id }: { id: string }) => {
   const messagesEndRef = useRef<HTMLLIElement | null>(null)
 
-  const { messages, append, setMessages } = useChat({ id })
+  const { messages } = useChat({ id })
 
   const scrollToBottom = () => {
     setTimeout(() => {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
     }, SCROLL_DELAY)
   }
-
-  useEffect(() => {
-    const messages = JSON.parse(localStorage.getItem(id) || "[]")
-    if (messages.length) {
-      setMessages(messages)
-    } else {
-      append({ role: "system", content: prompts[theme].system })
-    }
-  }, [id, theme, setMessages, append, prompts])
 
   useEffect(() => {
     scrollToBottom()
