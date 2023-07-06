@@ -67,19 +67,10 @@ export async function POST(req: Request) {
     }
   )
 
-  const res = await chain.call(
-    {
-      question: sanitizedQuestion,
-      chat_history: historyMessage,
-    },
-    [
-      {
-        handleLLMNewToken: (token) => {
-          console.log(token)
-        },
-      },
-    ]
-  )
+  const res = await chain.call({
+    question: sanitizedQuestion,
+    chat_history: historyMessage,
+  })
 
   handlers.handleLLMNewToken(res.text)
   handlers.handleLLMNewToken(
