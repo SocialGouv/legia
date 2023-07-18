@@ -12,7 +12,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           href="https://github.com/SocialGouv/legia/"
         >
-          version {packageJson.version} beta
+          version {packageJson.version}
         </a>
       </div>
     </footer>
