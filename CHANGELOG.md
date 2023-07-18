@@ -60,6 +60,14 @@
 ### Bug Fixes
 
 * dark disclaimer ([3aede0a](https://github.com/SocialGouv/legia/commit/3aede0ac0b7b2670aab23787a001b97b7a4d2041))
+* remove beta in footer ([ff7262b](https://github.com/SocialGouv/legia/commit/ff7262b1079e92cb0411efe94d387fd53aea121f))
+
+## [1.10.1](https://github.com/SocialGouv/legia/compare/v1.10.0...v1.10.1) (2023-07-18)
+
+
+### Bug Fixes
+
+* dark disclaimer ([3aede0a](https://github.com/SocialGouv/legia/commit/3aede0ac0b7b2670aab23787a001b97b7a4d2041))
 
 ## [1.10.1](https://github.com/SocialGouv/legia/compare/v1.10.0...v1.10.1) (2023-07-18)
 
