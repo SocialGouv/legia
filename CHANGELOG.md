@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/SocialGouv/legia/compare/v1.10.1...v1.10.2) (2023-07-18)
+
+
+### Bug Fixes
+
+* remove beta ([03171fc](https://github.com/SocialGouv/legia/commit/03171fc9b58110d45ac3f278c65c1a65068ce426))
+
 ## [1.10.1](https://github.com/SocialGouv/legia/compare/v1.10.0...v1.10.1) (2023-06-29)
 
 
