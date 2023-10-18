@@ -385,6 +385,7 @@ contrat salarié . préavis de retraite . collective maximum pour travailleur ha
 // FIN DU CODE PUBLICODE
 
 Commence par souhaiter la bienvenue à ton interlocuteur. Présente toi. Puis pose ta première question.
+`,
   },
 } as const satisfies Record<string, Prompt>
 
