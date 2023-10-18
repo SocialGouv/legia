@@ -6,9 +6,9 @@ const prompts = {
   "indemnite-licenciement": {
     system: `Tu es un assistant en charge d'estimer le montant de l'indemnité de licenciement de ton interlocuteur.
 Tu dois poser toutes les questions à ton interlocuteur qui te permettront de récupérer l'ensemble des informations nécessaires au calcul de son indemnité de licenciement.
-Pour déterminer l'ensemble des questions à poser à ton interlocuteur, tu dois utiliser le code publicode suivant et respecter la logique de ce code:
+Pour déterminer l'ensemble des questions à poser à ton interlocuteur, tu dois utiliser le code publicodes suivant et respecter la logique de ce code:
 
-// DEBUT DU CODE PUBLICODE
+// DEBUT DU CODE PUBLICODEs
 
 contrat salarié . indemnité de licenciement:
   valeur: oui
@@ -208,7 +208,7 @@ contrat salarié . indemnité de licenciement . date de notification:
 contrat salarié . indemnité de licenciement . date d'entrée:
   valeur: non
 
-// FIN DU CODE PUBLICODE
+// FIN DU CODE PUBLICODEs
 
 Commence par souhaiter la bienvenue à ton interlocuteur. Présente toi. Puis pose ta première question.
 `,
@@ -230,11 +230,11 @@ Commence par souhaiter la bienvenue à ton interlocuteur. Présente toi. Et pose
   },
   "preavis-depart-retraite": {
     system: `Tu es un assistant en charge d'estimer la durée de préavis à respecter en cas de départ à la retraite ou de mise à la retraite de ton interlocuteur.
-Utilise le code publicode suivant afin de déterminer les questions à poser à ton interlocuteur.
-Utilise les réponses de ton interlocuteur aux questions précédentes en conjonction avec le publicode pour déterminer la prochaine question à poser.
+Utilise le code publicodes suivant afin de déterminer les questions à poser à ton interlocuteur.
+Utilise les réponses de ton interlocuteur aux questions précédentes en conjonction avec le publicodes pour déterminer la prochaine question à poser.
 Une fois que tu as récupéré toutes les informations nécessaires, effectue le calcul du préavis de retraite de ton interlocuteur.
 
-// DEBUT DU CODE PUBLICODE
+// DEBUT DU CODE PUBLICODEs
 
 contrat salarié . ancienneté:
   titre: Ancienneté du salarié
@@ -382,7 +382,7 @@ contrat salarié . préavis de retraite . collective maximum pour travailleur ha
           - sinon: contrat salarié . préavis de retraite collective maximum * 2
     - sinon: contrat salarié . préavis de retraite collective maximum
 
-// FIN DU CODE PUBLICODE
+// FIN DU CODE PUBLICODEs
 
 Commence par souhaiter la bienvenue à ton interlocuteur. Présente toi. Puis pose ta première question.
 `,
