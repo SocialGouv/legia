@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/SocialGouv/legia/compare/v1.10.3...v1.10.4) (2023-11-08)
+
+
+### Bug Fixes
+
+* GITHUB_TOKEN variable ([0082aee](https://github.com/SocialGouv/legia/commit/0082aeee768a9875091e26cfe2b4b78e6b40e2e0))
+
 ## [1.10.3](https://github.com/SocialGouv/legia/compare/v1.10.2...v1.10.3) (2023-11-08)
 
 
