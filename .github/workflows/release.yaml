@@ -23,5 +23,6 @@ jobs:
         run: npm i --save=false semantic-release @socialgouv/releaserc @semantic-release/changelog @semantic-release/git @semantic-release/npm
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SOCIALGROOVYBOT_BOTO_PAT }}
         run: npx semantic-release --extends @socialgouv/releaserc
