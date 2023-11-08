@@ -12,9 +12,21 @@ const SCROLL_DELAY = 300
 
 const Messages = ({ id, theme }: { id: string; theme: Theme }) => {
   const { prompts } = usePrompts()
+  const systemPrompt = prompts[theme].system
   const messagesEndRef = useRef<HTMLLIElement | null>(null)
 
-  const { messages, append, setMessages } = useChat({ id })
+  const { messages, append, setMessages, reload } = useChat({ id })
+
+  useEffect(() => {
+    if (!messages.length) {
+      const history = JSON.parse(localStorage.getItem(id) || "[]")
+      if (history.length) {
+        setMessages(history)
+      } else {
+        append({ role: "system", content: systemPrompt })
+      }
+    }
+  })
 
   const scrollToBottom = () => {
     setTimeout(() => {
@@ -23,20 +35,13 @@ const Messages = ({ id, theme }: { id: string; theme: Theme }) => {
   }
 
   useEffect(() => {
-    const messages = JSON.parse(localStorage.getItem(id) || "[]")
-    if (messages.length) {
-      setMessages(messages)
-    } else {
-      append({ role: "system", content: prompts[theme].system })
-    }
-  }, [id, theme, setMessages, append, prompts])
-
-  useEffect(() => {
     scrollToBottom()
   }, [messages])
 
   useEffect(() => {
-    localStorage.setItem(id, JSON.stringify(messages))
+    if (messages.length !== 1) {
+      localStorage.setItem(id, JSON.stringify(messages)) // to debounce
+    }
   }, [id, messages])
 
   return (
