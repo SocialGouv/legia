@@ -1,3 +1,15 @@
+## [1.10.3](https://github.com/SocialGouv/legia/compare/v1.10.2...v1.10.3) (2023-11-08)
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies ([#19](https://github.com/SocialGouv/legia/issues/19)) ([8a92b0c](https://github.com/SocialGouv/legia/commit/8a92b0cc6af22bd32b35ed2f231e0c2d9688a541))
+* **deps:** update all dependencies ([#20](https://github.com/SocialGouv/legia/issues/20)) ([2115b00](https://github.com/SocialGouv/legia/commit/2115b0065bccdc663b0c2a2aa64e832ee29e4484))
+* **deps:** update dependency @types/react to v18.2.35 ([#25](https://github.com/SocialGouv/legia/issues/25)) ([a127a8a](https://github.com/SocialGouv/legia/commit/a127a8ac2da971167fdec766d3d54993340cc66d))
+* **deps:** update dependency postcss to v8.4.31 [security] ([#17](https://github.com/SocialGouv/legia/issues/17)) ([c2d69d2](https://github.com/SocialGouv/legia/commit/c2d69d2ee67015d0b1ec7b530411d67271242727))
+* first message load ([#26](https://github.com/SocialGouv/legia/issues/26)) ([cc97595](https://github.com/SocialGouv/legia/commit/cc97595750c270a0ad09f0733ccf5e9d7a4727d4))
+* upgrade release workflow ([923643a](https://github.com/SocialGouv/legia/commit/923643aa74df568aeae9b3b5102a1f421bd1fc12))
+
 ## [1.10.2](https://github.com/SocialGouv/legia/compare/v1.10.1...v1.10.2) (2023-07-18)
 
 
