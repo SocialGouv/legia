@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import localFont from "next/font/local"
 
-import "../../node_modules/github-markdown-css/github-markdown-light.css"
+import "github-markdown-css"
 import "./globals.css"
 
 import Navigation from "@/components/navigation"

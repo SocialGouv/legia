@@ -44,7 +44,6 @@ const Themes = ({ size = "medium" }: { size?: "medium" | "big" }) => {
   const handleClick = ({ slug: theme }: Theme) => {
     const id = uuid()
     const title = `Conversation #${threads.length + 1}`
-
     addThread({ id, theme, title })
     router.push(`/chat/${theme}/${id}`)
   }
