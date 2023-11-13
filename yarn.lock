@@ -385,25 +385,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.14":
-  version: 18.2.14
-  resolution: "@types/react-dom@npm:18.2.14"
+"@types/react-dom@npm:18.2.15":
+  version: 18.2.15
+  resolution: "@types/react-dom@npm:18.2.15"
   dependencies:
     "@types/react": "*"
-  checksum: 890289c70d1966c168037637c09cacefe6205bdd27a33252144a6b432595a2943775ac1a1accac0beddaeb67f8fdf721e076acb1adc990b08e51c3d9fd4e780c
+  checksum: 8e9631600c21ff561328e38a951d1991b3b3b20f538af4c0efbd1327c883a5573a63f50e1b945c34fa51b114b30e1ca5e62317bd54f21e063d6697b4be843a03
   languageName: node
   linkType: hard
 
-"@types/react-syntax-highlighter@npm:15.5.9":
-  version: 15.5.9
-  resolution: "@types/react-syntax-highlighter@npm:15.5.9"
+"@types/react-syntax-highlighter@npm:15.5.10":
+  version: 15.5.10
+  resolution: "@types/react-syntax-highlighter@npm:15.5.10"
   dependencies:
     "@types/react": "*"
-  checksum: b03c2b4b62a950f29cb46a5eae95b81add333b0d2b107d1d35c4efe639529ba424dab364d09b3d57ecef0f0394369d6680caaed80872184ebf5fb84749095808
+  checksum: 07da5fa432883130289aac2547bd5ddcb568c33b834983829933067c379ddb9a6de200d10174dabb0b4476ba3fce54761c7c8be1ede8a51cd0c1b1ca9cb6867e
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
+"@types/react@npm:*, @types/react@npm:18.2.37":
   version: 18.2.37
   resolution: "@types/react@npm:18.2.37"
   dependencies:
@@ -411,17 +411,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 2d2599f1a09e4f678509161fea8baeaf76d21deee460f4f3ccc1ca431ebe85f896d7d0b906127de17e97ed57240cec61955eb97d0b5d9cbf4e97fd6620b1acdb
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.35":
-  version: 18.2.35
-  resolution: "@types/react@npm:18.2.35"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: d3f1c39116c82e3a504f3332b9198f94f34a33d8535604434b1e387ecabd41ec995961775e2e1c08feefdde878a5b86220879350900137980d681ae3983db462
   languageName: node
   linkType: hard
 
@@ -439,10 +428,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/uuid@npm:9.0.6":
-  version: 9.0.6
-  resolution: "@types/uuid@npm:9.0.6"
-  checksum: 739dcb2e620ff097fa916edeab455eb75640c4883a850784fdb15b32f67b719e05275c6d6419bb6da11350d26bd14ed05ba5e992ff228411cdd98cbc772d71ef
+"@types/uuid@npm:9.0.7":
+  version: 9.0.7
+  resolution: "@types/uuid@npm:9.0.7"
+  checksum: c7321194aeba9ea173efd1e721403bdf4e7ae6945f8f8cdbc87c791f4b505ccf3dbc4a8883d90b394ef13b7c2dc778045792b05dbb23b3c746f8ea347804d448
   languageName: node
   linkType: hard
 
@@ -571,9 +560,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ai@npm:2.2.21":
-  version: 2.2.21
-  resolution: "ai@npm:2.2.21"
+"ai@npm:2.2.22":
+  version: 2.2.22
+  resolution: "ai@npm:2.2.22"
   dependencies:
     eventsource-parser: 1.0.0
     nanoid: 3.3.6
@@ -596,7 +585,7 @@ __metadata:
       optional: true
     vue:
       optional: true
-  checksum: dbcd09229737f40d9c4fd20275f1b3e761c401e58b35dbffaa9fb526f4838c995fa53c5d1e2ad13528d92fd7ad4cc2f531b25b2ce35b5d48d80d654828fff4b7
+  checksum: e5394114061b2591e2ca12ced19f6c79e8ebe968a3c7f9f9639fe0b4c8cf33a5a6fab144523c86b7d1e71c96813a0ba17f04eb6861e2957ee9b05702267b8cd1
   languageName: node
   linkType: hard
 
@@ -2853,11 +2842,11 @@ __metadata:
   resolution: "legia@workspace:."
   dependencies:
     "@types/node": 20.3.3
-    "@types/react": 18.2.35
-    "@types/react-dom": 18.2.14
-    "@types/react-syntax-highlighter": 15.5.9
-    "@types/uuid": 9.0.6
-    ai: 2.2.21
+    "@types/react": 18.2.37
+    "@types/react-dom": 18.2.15
+    "@types/react-syntax-highlighter": 15.5.10
+    "@types/uuid": 9.0.7
+    ai: 2.2.22
     autoprefixer: 10.4.16
     date-fns: 2.30.0
     eslint: 8.43.0
@@ -2866,7 +2855,7 @@ __metadata:
     github-markdown-css: 5.4.0
     gpt-3-encoder: 1.1.4
     next: 13.4.19
-    openai: 4.16.1
+    openai: 4.16.2
     postcss: 8.4.31
     prettier: 2.8.8
     react: 18.2.0
@@ -3944,9 +3933,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"openai@npm:4.16.1":
-  version: 4.16.1
-  resolution: "openai@npm:4.16.1"
+"openai@npm:4.16.2":
+  version: 4.16.2
+  resolution: "openai@npm:4.16.2"
   dependencies:
     "@types/node": ^18.11.18
     "@types/node-fetch": ^2.6.4
@@ -3959,7 +3948,7 @@ __metadata:
     web-streams-polyfill: ^3.2.1
   bin:
     openai: bin/cli
-  checksum: 1d917df7c77c488e8dc2bb685acd3dea2ea373431f28e31c9831de7d4f9b14a440b6a187ca92a37512c3d00d9371036b308c27ad18e9b242c4743fb510c1a491
+  checksum: 33a77aeed83ca1ade26db47679a81c2bc271afdf7c76a48fa86e5805123f82ac12b007bbd052747da2249ab59bcd7afe8dfa1ca7dd007f1fbda177fe8d386c48
   languageName: node
   linkType: hard
 
