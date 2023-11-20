@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/SocialGouv/legia/compare/v1.10.4...v1.10.5) (2023-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ai to v2.2.24 ([#28](https://github.com/SocialGouv/legia/issues/28)) ([9904637](https://github.com/SocialGouv/legia/commit/99046372c2931b7df38133d5c11a5ab14a6b8f87))
+
 ## [1.10.4](https://github.com/SocialGouv/legia/compare/v1.10.3...v1.10.4) (2023-11-08)
 
 
