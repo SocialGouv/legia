@@ -10,7 +10,7 @@
     "test": "echo 'no tests'"
   },
   "dependencies": {
-    "ai": "2.2.22",
+    "ai": "2.2.24",
     "date-fns": "2.30.0",
     "github-markdown-css": "5.4.0",
     "gpt-3-encoder": "1.1.4",

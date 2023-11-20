@@ -560,9 +560,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ai@npm:2.2.22":
-  version: 2.2.22
-  resolution: "ai@npm:2.2.22"
+"ai@npm:2.2.24":
+  version: 2.2.24
+  resolution: "ai@npm:2.2.24"
   dependencies:
     eventsource-parser: 1.0.0
     nanoid: 3.3.6
@@ -585,7 +585,7 @@ __metadata:
       optional: true
     vue:
       optional: true
-  checksum: e5394114061b2591e2ca12ced19f6c79e8ebe968a3c7f9f9639fe0b4c8cf33a5a6fab144523c86b7d1e71c96813a0ba17f04eb6861e2957ee9b05702267b8cd1
+  checksum: 9068bfe4e0e18a7505e7263c9d568687b3986ca8a7823db39f074db2694c24f64c50f68f32852a0416fb3eeb37df0c0bcfacb90b367f8df03f684152aa28532b
   languageName: node
   linkType: hard
 
@@ -2846,7 +2846,7 @@ __metadata:
     "@types/react-dom": 18.2.15
     "@types/react-syntax-highlighter": 15.5.10
     "@types/uuid": 9.0.7
-    ai: 2.2.22
+    ai: 2.2.24
     autoprefixer: 10.4.16
     date-fns: 2.30.0
     eslint: 8.43.0
