@@ -385,12 +385,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.15":
-  version: 18.2.15
-  resolution: "@types/react-dom@npm:18.2.15"
+"@types/react-dom@npm:18.2.17":
+  version: 18.2.17
+  resolution: "@types/react-dom@npm:18.2.17"
   dependencies:
     "@types/react": "*"
-  checksum: 8e9631600c21ff561328e38a951d1991b3b3b20f538af4c0efbd1327c883a5573a63f50e1b945c34fa51b114b30e1ca5e62317bd54f21e063d6697b4be843a03
+  checksum: 7a4e704ed4be6e0c3ccd8a22ff69386fe548304bf4db090513f42e059ff4c65f7a427790320051524d6578a2e4c9667bb7a80a4c989b72361c019fbe851d9385
   languageName: node
   linkType: hard
 
@@ -403,14 +403,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.37":
-  version: 18.2.37
-  resolution: "@types/react@npm:18.2.37"
+"@types/react@npm:*, @types/react@npm:18.2.38":
+  version: 18.2.38
+  resolution: "@types/react@npm:18.2.38"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 2d2599f1a09e4f678509161fea8baeaf76d21deee460f4f3ccc1ca431ebe85f896d7d0b906127de17e97ed57240cec61955eb97d0b5d9cbf4e97fd6620b1acdb
+  checksum: 71f8c167173d32252be8b2d3c1c76b3570b94d2fbbd139da86d146be453626f5777e12c2781559119637520dbef9f91cffe968f67b5901618f29226d49fad326
   languageName: node
   linkType: hard
 
@@ -560,9 +560,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ai@npm:2.2.24":
-  version: 2.2.24
-  resolution: "ai@npm:2.2.24"
+"ai@npm:2.2.25":
+  version: 2.2.25
+  resolution: "ai@npm:2.2.25"
   dependencies:
     eventsource-parser: 1.0.0
     nanoid: 3.3.6
@@ -585,7 +585,7 @@ __metadata:
       optional: true
     vue:
       optional: true
-  checksum: 9068bfe4e0e18a7505e7263c9d568687b3986ca8a7823db39f074db2694c24f64c50f68f32852a0416fb3eeb37df0c0bcfacb90b367f8df03f684152aa28532b
+  checksum: 46adf44fd446b168e53f13937d178a821d79a3dcf45f4b573b72c0b17b669f4fe081def0f476773399edb9991e5f3e8a39c5bff911459f18e35d1e01fd2b0acc
   languageName: node
   linkType: hard
 
@@ -2842,11 +2842,11 @@ __metadata:
   resolution: "legia@workspace:."
   dependencies:
     "@types/node": 20.3.3
-    "@types/react": 18.2.37
-    "@types/react-dom": 18.2.15
+    "@types/react": 18.2.38
+    "@types/react-dom": 18.2.17
     "@types/react-syntax-highlighter": 15.5.10
     "@types/uuid": 9.0.7
-    ai: 2.2.24
+    ai: 2.2.25
     autoprefixer: 10.4.16
     date-fns: 2.30.0
     eslint: 8.43.0
