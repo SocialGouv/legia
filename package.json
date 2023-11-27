@@ -10,7 +10,7 @@
     "test": "echo 'no tests'"
   },
   "dependencies": {
-    "ai": "2.2.24",
+    "ai": "2.2.25",
     "date-fns": "2.30.0",
     "github-markdown-css": "5.4.0",
     "gpt-3-encoder": "1.1.4",
@@ -27,8 +27,8 @@
   },
   "devDependencies": {
     "@types/node": "20.3.3",
-    "@types/react": "18.2.37",
-    "@types/react-dom": "18.2.15",
+    "@types/react": "18.2.38",
+    "@types/react-dom": "18.2.17",
     "@types/react-syntax-highlighter": "15.5.10",
     "@types/uuid": "9.0.7",
     "autoprefixer": "10.4.16",
