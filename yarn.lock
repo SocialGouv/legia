@@ -394,23 +394,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-syntax-highlighter@npm:15.5.10":
-  version: 15.5.10
-  resolution: "@types/react-syntax-highlighter@npm:15.5.10"
+"@types/react-syntax-highlighter@npm:15.5.11":
+  version: 15.5.11
+  resolution: "@types/react-syntax-highlighter@npm:15.5.11"
   dependencies:
     "@types/react": "*"
-  checksum: 07da5fa432883130289aac2547bd5ddcb568c33b834983829933067c379ddb9a6de200d10174dabb0b4476ba3fce54761c7c8be1ede8a51cd0c1b1ca9cb6867e
+  checksum: 8363ded0138963407c909f198ddcac58d9c937b118f16a46fb3e97078dd0c6234746f9efa85f6aa660efebe357bab11047c95b57bd9508dd4b09619b1a237087
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.41":
-  version: 18.2.41
-  resolution: "@types/react@npm:18.2.41"
+"@types/react@npm:*, @types/react@npm:18.2.43":
+  version: 18.2.43
+  resolution: "@types/react@npm:18.2.43"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: fcf4c598e5adc1be1dafaa5977ff7698b5b69c6b1473ce524a28d57fa04af3f1a1aa1193cf284542451d98ae5338d26270f8c6e1f7afda5bbbe6c3a4ba40b1d8
+  checksum: e7e4da18c7b14e4b8b1ea630d1d8224835698f2bb2485766455bfb9dea93b8ee6cc549a9fe1cb10c984e62685db44fcfb61e8fac913b008cd30a92087f25b9df
   languageName: node
   linkType: hard
 
@@ -560,9 +560,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ai@npm:2.2.27":
-  version: 2.2.27
-  resolution: "ai@npm:2.2.27"
+"ai@npm:2.2.29":
+  version: 2.2.29
+  resolution: "ai@npm:2.2.29"
   dependencies:
     eventsource-parser: 1.0.0
     nanoid: 3.3.6
@@ -585,7 +585,7 @@ __metadata:
       optional: true
     vue:
       optional: true
-  checksum: 45f6378ec0facd8e07d7b362b58b480d660a6e94e8102e8d2909bc97e1d9fc240284a6f5cc856e6a5d7c812cda8d4aa99ad7a2bb402d37788b5483f56adda9b7
+  checksum: 742ed4cfa901994c94e2ccbb93bb2aa455b49cb37ad13411498caa5fa5c67298e70d43757a133a1f91dec2fb709d837d6281e7b0df2127d5607d5ed6b1a5d316
   languageName: node
   linkType: hard
 
@@ -2842,11 +2842,11 @@ __metadata:
   resolution: "legia@workspace:."
   dependencies:
     "@types/node": 20.3.3
-    "@types/react": 18.2.41
+    "@types/react": 18.2.43
     "@types/react-dom": 18.2.17
-    "@types/react-syntax-highlighter": 15.5.10
+    "@types/react-syntax-highlighter": 15.5.11
     "@types/uuid": 9.0.7
-    ai: 2.2.27
+    ai: 2.2.29
     autoprefixer: 10.4.16
     date-fns: 2.30.0
     eslint: 8.43.0
@@ -2865,7 +2865,7 @@ __metadata:
     react-syntax-highlighter: 15.5.0
     react-textarea-autosize: 8.4.1
     remark-gfm: 3.0.1
-    tailwindcss: 3.3.5
+    tailwindcss: 3.3.6
     typescript: 5.1.6
     uuid: 9.0.1
   languageName: unknown
@@ -4989,9 +4989,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:3.3.5":
-  version: 3.3.5
-  resolution: "tailwindcss@npm:3.3.5"
+"tailwindcss@npm:3.3.6":
+  version: 3.3.6
+  resolution: "tailwindcss@npm:3.3.6"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
     arg: ^5.0.2
@@ -5018,7 +5018,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: e04bb3bb7f9f17e9b6db0c7ace755ef0d6d05bff36ebeb9e5006e13c018ed5566f09db30a1a34380e38fa93ebbb4ae0e28fe726879d5e9ddd8c5b52bffd26f14
+  checksum: 44632ac471248ecebcee1a2f15a0c3e9b8383513e71692b586aa2fe56dca12828ff70de3d340c898f27b27480e8475e5eb345fb2ebb813028bb2393578a34337
   languageName: node
   linkType: hard
 
