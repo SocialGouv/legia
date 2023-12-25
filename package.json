@@ -10,7 +10,7 @@
     "test": "echo 'no tests'"
   },
   "dependencies": {
-    "ai": "2.2.29",
+    "ai": "2.2.30",
     "date-fns": "2.30.0",
     "github-markdown-css": "5.4.0",
     "gpt-3-encoder": "1.1.4",
@@ -37,7 +37,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "postcss": "8.4.32",
     "prettier": "2.8.8",
-    "tailwindcss": "3.3.6",
+    "tailwindcss": "3.3.7",
     "typescript": "5.1.6"
   },
   "packageManager": "yarn@3.6.4"
