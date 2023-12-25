@@ -1,3 +1,10 @@
+## [1.10.6](https://github.com/SocialGouv/legia/compare/v1.10.5...v1.10.6) (2023-12-25)
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies ([#35](https://github.com/SocialGouv/legia/issues/35)) ([42276be](https://github.com/SocialGouv/legia/commit/42276be05c1d85b410960547a6155800502949d1))
+
 ## [1.10.5](https://github.com/SocialGouv/legia/compare/v1.10.4...v1.10.5) (2023-11-20)
 
 
