@@ -2040,10 +2040,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-markdown-css@npm:5.4.0":
-  version: 5.4.0
-  resolution: "github-markdown-css@npm:5.4.0"
-  checksum: 04579c9a12a5f96e1479c852f08518bb4c4c203c4be1fdef776c5fc3379f0bddce19eb15a1eb5e986a54bdd93a1cc0b956bf6c968488930c8e19482a98d3ada7
+"github-markdown-css@npm:5.5.1":
+  version: 5.5.1
+  resolution: "github-markdown-css@npm:5.5.1"
+  checksum: ed04423a85e83d75baa128cea2ddcd2e688bc73a92abf146f9b9cc20546db40c67c9fadf150c5289d4c89b8f76bf11fb3c312ee8161398642be8298eeaa5a4be
   languageName: node
   linkType: hard
 
@@ -2852,18 +2852,18 @@ __metadata:
     eslint: 8.43.0
     eslint-config-next: 13.4.19
     eslint-plugin-prettier: 4.2.1
-    github-markdown-css: 5.4.0
+    github-markdown-css: 5.5.1
     gpt-3-encoder: 1.1.4
     next: 13.4.19
-    openai: 4.16.2
+    openai: 4.26.1
     postcss: 8.4.33
     prettier: 2.8.8
     react: 18.2.0
     react-dom: 18.2.0
-    react-hook-form: 7.45.4
+    react-hook-form: 7.50.0
     react-markdown: 8.0.7
     react-syntax-highlighter: 15.5.0
-    react-textarea-autosize: 8.4.1
+    react-textarea-autosize: 8.5.3
     remark-gfm: 3.0.1
     tailwindcss: 3.3.7
     typescript: 5.1.6
@@ -3933,9 +3933,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"openai@npm:4.16.2":
-  version: 4.16.2
-  resolution: "openai@npm:4.16.2"
+"openai@npm:4.26.1":
+  version: 4.26.1
+  resolution: "openai@npm:4.26.1"
   dependencies:
     "@types/node": ^18.11.18
     "@types/node-fetch": ^2.6.4
@@ -3948,7 +3948,7 @@ __metadata:
     web-streams-polyfill: ^3.2.1
   bin:
     openai: bin/cli
-  checksum: 33a77aeed83ca1ade26db47679a81c2bc271afdf7c76a48fa86e5805123f82ac12b007bbd052747da2249ab59bcd7afe8dfa1ca7dd007f1fbda177fe8d386c48
+  checksum: 08252ccba461b55f621b2cd19f73d4cb1dcb183c4eeeab990c29daf97845124b0716c193943b538f6f738e8c6132e5a3ae0ebdaee526ab7ddcc8af2a38357f30
   languageName: node
   linkType: hard
 
@@ -4290,12 +4290,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:7.45.4":
-  version: 7.45.4
-  resolution: "react-hook-form@npm:7.45.4"
+"react-hook-form@npm:7.50.0":
+  version: 7.50.0
+  resolution: "react-hook-form@npm:7.50.0"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18
-  checksum: 1d84c78dadf561bc9e360272c5c856c724426162e13a74929c0517c3eb8004a7f057561fff3bfd4c1121b36d6cf1437399df1dbfd01d0817b9f922503f407d8f
+  checksum: d70561cbc251696bfbfa88c71fc7ac21df1f279acead7eaed81629e4c5469bebdc101a68350b8bc1658195980aa40a55bcd742a56494c5181e0348b94e8b39a2
   languageName: node
   linkType: hard
 
@@ -4354,16 +4354,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-textarea-autosize@npm:8.4.1":
-  version: 8.4.1
-  resolution: "react-textarea-autosize@npm:8.4.1"
+"react-textarea-autosize@npm:8.5.3":
+  version: 8.5.3
+  resolution: "react-textarea-autosize@npm:8.5.3"
   dependencies:
     "@babel/runtime": ^7.20.13
     use-composed-ref: ^1.3.0
     use-latest: ^1.2.1
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: b200437cd68938c23b13944fe6fdfeb32a6d949ac88588307f14d6fcdaba3044b8c7d8e239851b081f2101d433b93d4cf5aa027543b170b84f2a0cbe6fc9093f
+  checksum: b317c3763f37a89621bbafd0e6e2d068e7876790a5ae77f497adfd6ba9334ceea138c8a0b7d907bae0f79c765cb24e8b2ca2b8033b4144c0bce28571a3658921
   languageName: node
   linkType: hard
 
